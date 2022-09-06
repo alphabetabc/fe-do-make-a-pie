@@ -12,7 +12,7 @@
         <main>
             <select id="select"></select>
             <section class="page">
-                <section class="part" id="code"></section>
+                <textarea class="part" id="code" readonly></textarea>
                 <section class="part demo">
                     <div id="chart"></div>
                 </section>
@@ -20,13 +20,13 @@
         </main>
     </body>
 </html>
-<script type="importmap">
-    {
-        "imports": {
-            "echarts": "./vendors/echarts.esm.js"
-        }
-    }
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" async></script>
+<!-- <script src="./node_modules/echarts/dist/echarts.js"></script>
+<script src="./node_modules/echarts-gl/dist/echarts-gl.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
+
 <script type="module">
-    import './index.js';
+    import "./index.js";
 </script>

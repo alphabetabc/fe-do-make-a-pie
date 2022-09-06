@@ -1,25 +1,31 @@
-import * as echarts from 'echarts';
+// import * as echarts from "echarts";
+// import "echarts-gl";
 
 const domElement = {
-    select: document.getElementById('select'),
-    codeEl: document.getElementById('code'),
-    chartEl: document.getElementById('chart'),
+    select: document.getElementById("select"),
+    codeEl: document.getElementById("code"),
+    chartEl: document.getElementById("chart"),
 };
 
-const myChart = echarts.init(domElement.chartEl);
+let myChart = echarts.init(domElement.chartEl);
 let option;
 
 const loadOption = (path) => {
-    fetch(`./make-a-pie/${path.join('/')}.txt`)
+    console.log("[tags]", path);
+    fetch(`./make-a-pie/${path.join("/")}.txt`)
         .then((res) => res.text())
         .then((str) => {
             domElement.codeEl.innerHTML = str;
             myChart.clear();
             eval(str);
             myChart.setOption(option);
+            console.log(option);
         })
         .catch((e) => {
-            console.log('[loadOption]', e);
+            console.log("[loadOption]", e);
+            myChart.clear();
+            myChart.dispose();
+            myChart = echarts.init(domElement.chartEl);
         });
 };
 
@@ -27,16 +33,16 @@ const loadJson = (path) => fetch(path).then((res) => res.json());
 
 const initEnv = () => {
     return Promise.all([
-        loadJson('./make-a-pie/assets.json'), // assets
-        loadJson('./vendors/map/json/china.json'), // china
+        loadJson("./make-a-pie/assets.json"), // assets
+        loadJson("./vendors/map/json/china.json"), // china
     ]);
 };
 
 const initSelectList = (list) => {
     const fragment = document.createDocumentFragment();
     list.forEach((d) => {
-        const opt = document.createElement('option');
-        opt.setAttribute('value', d.cid);
+        const opt = document.createElement("option");
+        opt.setAttribute("value", d.cid);
         opt.innerHTML = d.title;
         // opt.builtinTags = d.builtinTags;
         fragment.appendChild(opt);
@@ -47,7 +53,7 @@ const initSelectList = (list) => {
 
     loadOption(list[0].builtinTags);
 
-    select.addEventListener('change', (e) => {
+    select.addEventListener("change", (e) => {
         const id = e.target.value;
         const item = list.find((d) => d.cid === id);
         if (item) {
@@ -58,7 +64,7 @@ const initSelectList = (list) => {
 
 const render = async () => {
     const [list, china] = await initEnv();
-    echarts.registerMap('china', china);
+    echarts.registerMap("china", china);
     initSelectList(list);
 };
 
