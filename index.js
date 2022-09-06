@@ -1,40 +1,65 @@
 import * as echarts from 'echarts';
 
-const myChart = echarts.init(document.getElementById('chart'));
+const domElement = {
+    select: document.getElementById('select'),
+    codeEl: document.getElementById('code'),
+    chartEl: document.getElementById('chart'),
+};
+
+const myChart = echarts.init(domElement.chartEl);
 let option;
 
 const loadOption = (path) => {
     fetch(`./make-a-pie/${path.join('/')}.txt`)
         .then((res) => res.text())
         .then((str) => {
+            domElement.codeEl.innerHTML = str;
             myChart.clear();
             eval(str);
             myChart.setOption(option);
+        })
+        .catch((e) => {
+            console.log('[loadOption]', e);
         });
 };
 
-fetch('./make-a-pie/assets.json')
-    .then((res) => res.json())
-    .then((list) => {
-        const fragment = document.createDocumentFragment();
-        list.forEach((d) => {
-            const opt = document.createElement('option');
-            opt.setAttribute('value', d.cid);
-            opt.innerHTML = d.title;
-            opt.builtinTags = d.builtinTags;
-            fragment.appendChild(opt);
-        });
+const loadJson = (path) => fetch(path).then((res) => res.json());
 
-        const select = document.getElementById('select');
-        select.appendChild(fragment);
+const initEnv = () => {
+    return Promise.all([
+        loadJson('./make-a-pie/assets.json'), // assets
+        loadJson('./vendors/map/json/china.json'), // china
+    ]);
+};
 
-        // loadOption(list[0].builtinTags);
-
-        select.addEventListener('change', (e) => {
-            const id = e.target.value;
-            const item = list.find((d) => d.cid === id);
-            if (item) {
-                loadOption(item.builtinTags);
-            }
-        });
+const initSelectList = (list) => {
+    const fragment = document.createDocumentFragment();
+    list.forEach((d) => {
+        const opt = document.createElement('option');
+        opt.setAttribute('value', d.cid);
+        opt.innerHTML = d.title;
+        // opt.builtinTags = d.builtinTags;
+        fragment.appendChild(opt);
     });
+
+    const select = domElement.select;
+    select.appendChild(fragment);
+
+    loadOption(list[0].builtinTags);
+
+    select.addEventListener('change', (e) => {
+        const id = e.target.value;
+        const item = list.find((d) => d.cid === id);
+        if (item) {
+            loadOption(item.builtinTags);
+        }
+    });
+};
+
+const render = async () => {
+    const [list, china] = await initEnv();
+    echarts.registerMap('china', china);
+    initSelectList(list);
+};
+
+render();

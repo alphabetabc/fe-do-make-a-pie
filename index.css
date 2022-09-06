@@ -3,11 +3,28 @@ body {
     padding: 0;
 }
 
-#chart {
-    position: relative;
-    left: 100px;
-    top: 100px;
+.page {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    overflow: hidden;
+}
+
+.page .part#code {
     width: 800px;
-    min-height: 600px;
+    background-color: aquamarine;
+    white-space: pre;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+
+.page .part.demo {
+    position: relative;
+    flex: 1;
+}
+
+#chart {
+    width: 100%;
+    height: 100%;
     background-color: antiquewhite;
 }
