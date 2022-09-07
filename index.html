@@ -4,12 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>[FE]Make A Pie</title>
         <link rel="stylesheet" href="./index.css" />
     </head>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" async></script>
+    <!-- <script src="./node_modules/echarts/dist/echarts.js"></script>
+    <script src="./node_modules/echarts-gl/dist/echarts-gl.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
     <body>
-        <main>
+        <!-- <main>
             <select id="select"></select>
             <section class="page">
                 <textarea class="part" id="code" readonly></textarea>
@@ -17,16 +22,8 @@
                     <div id="chart"></div>
                 </section>
             </section>
-        </main>
+        </main> -->
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" async></script>
-<!-- <script src="./node_modules/echarts/dist/echarts.js"></script>
-<script src="./node_modules/echarts-gl/dist/echarts-gl.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
-
-<script type="module">
-    import "./index.js";
-</script>

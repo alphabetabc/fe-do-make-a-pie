@@ -1,0 +1,36 @@
+.chart-view {
+    .chart-view-ec-container {
+        display: flex;
+        justify-content: space-around;
+
+        .part {
+            width: calc(50% - 3px);
+
+            &.code {
+                white-space: pre-wrap;
+            }
+
+            &.view {
+                border: 1px solid #000;
+                position: relative;
+                overflow: auto;
+
+                .ec-chart {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    &.show {
+                        transform: scale(1);
+                    }
+
+                    &.hide {
+                        transform: scale(0);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,5 @@
 // import * as echarts from "echarts";
 // import "echarts-gl";
-
 const domElement = {
     select: document.getElementById("select"),
     codeEl: document.getElementById("code"),
