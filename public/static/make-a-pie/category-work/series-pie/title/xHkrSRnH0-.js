@@ -1,0 +1,1 @@
+var datas=[{value:335,name:"直接访问"},{value:310,name:"邮件营销"},{value:234,name:"联盟广告"}];function pieChartMaker(a){option={title:{text:"某站点用户访问来源"},series:[{name:"访问来源",type:"pie",radius:"55%",center:["50%","60%"],data:a}]},myChart.setOption(option)}pieChartMaker(datas);var newDatas=[{value:500,name:"直接访问"},{value:500,name:"邮件营销"},{value:500,name:"联盟广告"}];pieChartMaker(newDatas);

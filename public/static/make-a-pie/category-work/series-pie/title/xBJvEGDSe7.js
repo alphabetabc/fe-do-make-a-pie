@@ -1,0 +1,1 @@
+option={backgroundColor:"#12233E",title:{text:"总收入",left:"center",top:"center",textStyle:{color:"#B3BFD2",fontSize:60}},color:["#00E883","#384AFF","#7A8AFF","#FFE77D"],series:[{type:"pie",center:["50%","50%"],radius:["50%","75%"],label:{show:!1},emphasis:{scale:!1},data:[{value:8},{value:4},{value:4},{value:4}]}]};

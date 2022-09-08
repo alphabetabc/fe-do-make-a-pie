@@ -1,0 +1,2 @@
+option={backgroundColor:"#FFF",tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},legend:{orient:"vertical",x:"left",data:["合格批次数","不合格批次数 "]},series:[{name:"各环节抽样不合格批次占比",type:"pie",selectedMode:"single",radius:[0,"10%"],center:["40%","20%"],color:["#FF9966","#999"],label:{normal:{formatter:`{b}
+   ({d}%)`}},labelLine:{normal:{show:!0}},data:[{value:302,name:"合格批次数"},{value:132,name:"不合格批次数"}]}]};

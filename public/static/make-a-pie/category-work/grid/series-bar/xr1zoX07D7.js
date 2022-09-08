@@ -1,0 +1,1 @@
+var aSeries={type:"bar",data:[1,2,3]},bSeries={type:"bar",data:[2,3,4]};option={xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[aSeries,bSeries]},setTimeout(function(){option.series=[bSeries],myChart.setOption(option,!0)},3e3);

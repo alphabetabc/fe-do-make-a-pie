@@ -1,10 +1,11 @@
 import { useRef, useEffect, useState } from "react";
 import classNames from "classnames";
 
-import * as echarts from "echarts";
+import * as ec from "echarts";
 import "echarts-gl";
 
 import * as api from "@Common/api";
+import { STATIC_PATCH } from "@Common/constant";
 
 import "./index.less";
 
@@ -21,12 +22,12 @@ const ChartView = (props: any) => {
 
     const localFlag = useRef<any>({ dispose: false });
 
-    const [chartIns, setChartIns] = useState<echarts.ECharts | null>(null);
+    const [chartIns, setChartIns] = useState<ec.ECharts | null>(null);
     const [code, setCode] = useState<string>(`option=${JSON.stringify(DEFAULT_OPTION, null, 4)}`);
     const [err, setErr] = useState<string | null>(null);
 
     useEffect(() => {
-        const chart = echarts.init(domElRef.current as HTMLElement);
+        const chart = ec.init(domElRef.current as HTMLElement);
 
         setChartIns(chart);
         const ref = localFlag.current;
@@ -39,18 +40,28 @@ const ChartView = (props: any) => {
 
     useEffect(() => {
         let abort = false;
-        api.fetchText(`/static/make-a-pie/${props.builtinTags.join("/")}.txt`).then((code) => {
+        api.fetchText(`${STATIC_PATCH}/make-a-pie/${props.builtinTags.join("/")}/${props.chartId}.js`).then((code) => {
             if (abort) return;
-            setCode(code);
+            const formatted = prettier.format(code, {
+                plugins: [prettierPlugins.babel],
+                tabWidth: 4,
+                semi: true,
+                singleQuote: true,
+            });
+            setCode(formatted);
         });
 
         return () => {
             abort = true;
         };
-    }, [props.builtinTags]);
+    }, [props.builtinTags, props.chartId]);
 
     useEffect(() => {
         if (!chartIns || localFlag.current.dispose) return;
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const echarts = ec;
+
         var option;
         let myChart: any = chartIns;
         try {

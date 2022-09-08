@@ -1,0 +1,1 @@
+var data=[820];option={xAxis:{type:"category",boundaryGap:!1,data:["7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00"]},yAxis:{type:"value"},series:[{data,type:"line",smooth:!0}]},setInterval(function(){data.length<13&&data.push(5),myChart.setOption({series:[{data}]})},1e3);

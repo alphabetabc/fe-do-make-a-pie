@@ -1,0 +1,1 @@
+option={xAxis:{type:"category",data:["1月","2月","3月","4月","5月","6月","7月"],axisTick:{show:!1}},yAxis:{type:"value",show:!1},series:[{data:[820,932,901,934,1290,1330,1320],type:"line",smooth:!0,label:{show:!0}}]};

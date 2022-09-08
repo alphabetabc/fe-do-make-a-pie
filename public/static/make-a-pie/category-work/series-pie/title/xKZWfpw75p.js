@@ -1,0 +1,4 @@
+for(var getsjjg=["高级","中级","初级","无等级"],getsjjgrs=[35,30,22,12],syjgdata=[],i=0;i<getsjjg.length;i++)syjgdata.push({name:getsjjg[i],value:getsjjgrs[i]});var rich={name:{color:"#666666",fontSize:14,padding:[0,5],fontWeight:"400",align:"right"},value:{color:"#333",fontSize:15,padding:[5,5],fontWeight:"500",align:"right"},percent:{color:"#333333",align:"right",fontSize:15,fontWeight:"500",padding:[0,5]},hr:{borderColor:"#DFDFDF",width:"100%",borderWidth:1,height:0}},colorList=["#4E7BFE","#6796FD","#26D080","#FFC805"];option={title:{text:`职称
+结构`,x:"center",y:"center",textStyle:{color:"#333333",fontSize:16,fontWeight:"400"}},series:{itemStyle:{normal:{color:function(e){return colorList[e.dataIndex]}}},type:"pie",radius:["35%","50%"],center:["50%","50%"],labelLine:{normal:{length:20,length2:60,lineStyle:{color:"#DFDFDF"}}},label:{normal:{formatter:e=>"{name|"+e.name+`}
+{value|`+e.value+`}
+{percent|`+e.percent.toFixed(0)+"%}",rich,padding:[0,-5,0,-5]}},data:syjgdata}};

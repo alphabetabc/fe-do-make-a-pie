@@ -1,0 +1,2 @@
+option={color:["#3398DB"],tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},xAxis:[{type:"category",data:["只要平凡","时间飞行","对你太想念","不找了","闻窗一如初见","关于春天的一切","流程"],axisTick:{alignWithLabel:!0},axisLabel:{formatter:function(i){var r="",a=4,s=Math.ceil(i.length/a)||0;if(i.length>a)for(var e=0;e<s;e++){var t="",n=e*a,o=n+a;e==s-1?t=i.substring(n,i.length):t=i.substring(n,o)+`
+`,r+=t}else r=i;return r}}}],yAxis:[{type:"value"}],series:[{name:"直接访问",type:"bar",barWidth:"60%",data:[10,52,200,334,390,330,220]}]};

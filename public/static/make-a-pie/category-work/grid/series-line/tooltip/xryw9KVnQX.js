@@ -1,0 +1,1 @@
+option={backgroundColor:"#2eadd3",tooltip:{},grid:{left:"left",right:"0",bottom:"0",top:"0"},xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],show:!1},yAxis:{type:"value",show:!1},series:[{data:[820,932,901,934,1290,1330,1320],type:"line",symbol:"circle",symbolSize:10,itemStyle:{normal:{color:"#fff",lineStyle:{color:"#fff",opacity:.4},opacity:.4}}}]};

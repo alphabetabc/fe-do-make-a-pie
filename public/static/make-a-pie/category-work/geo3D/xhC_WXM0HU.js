@@ -1,0 +1,1 @@
+option={geo3D:{map:"china",boxHeight:10,environment:new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:"#00aaff"},{offset:.7,color:"#998866"},{offset:1,color:"#998866"}],!1),itemStyle:{borderWidth:1},label:{show:!1},viewControl:{alpha:70,beta:0}},series:[]};

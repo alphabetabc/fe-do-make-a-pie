@@ -1,0 +1,1 @@
+app.title="环形图",option={polar:{},angleAxis:{show:!0,max:360},radiusAxis:{max:100,show:!0},graphic:[{type:"circle",shape:{cx:100,cy:20,r:15},style:{fill:"yellow"}}],series:[{type:"custom",coordinateSystem:"polar",renderItem(t,r){const e=r.coord([30,120]);return{type:"circle",shape:{cx:e[0],cy:e[1],r:5},style:{fill:"red"}}},data:[[1,2,3]]}]};

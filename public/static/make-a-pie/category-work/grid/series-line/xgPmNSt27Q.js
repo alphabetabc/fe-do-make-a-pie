@@ -1,0 +1,1 @@
+option={backgroundColor:"#fff",xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data:[700,780,820,820,900,930,1320],type:"line",smooth:!0,symbol:"none",lineStyle:{color:"#3275FB",width:3,shadowColor:"rgba(0, 0, 0, 0.3)",shadowBlur:15,shadowOffsetY:20}}]};

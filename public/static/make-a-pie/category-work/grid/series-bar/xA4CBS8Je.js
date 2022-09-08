@@ -1,0 +1,1 @@
+option={grid:{left:"3%",right:"3%",bottom:"3%",top:"8%",containLabel:!0},xAxis:[{type:"category",data:["肥东县","肥西县","长丰县","庐江县","巢湖市","瑶海区","蜀山区","庐阳区"]}],yAxis:[{type:"value",name:"单位：万元"}],series:[{type:"bar",barWidth:20,data:[-158,-132,-105,-80,32,64,108,146],itemStyle:{normal:{color:function(e){var t;return e.data>=0?t="#FF8080":t="#80E6CC",t}}}}]};

@@ -1,0 +1,2 @@
+res={xAxisData:["XX国际集团有限公司","XX际集团有限公司","XX国际集团有限公司","XX国际集团有限公司","XX第六"],seriesData:[900,823,751,500,380]},option={tooltip:{trigger:"axis",axisPointer:{type:"shadow"},formatter:function(t){var e=t[0];return e.name+" : "+e.value+e.seriesName}},grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:{type:"category",splitLine:{show:!1},axisLabel:{interval:0,formatter:function(t){return t.split("").join(`
+`)}},data:res.xAxisData},yAxis:{name:"人",type:"value"},series:[{name:"人",type:"bar",stack:"总量",label:{normal:{show:!0,position:"top"}},data:res.seriesData}]};

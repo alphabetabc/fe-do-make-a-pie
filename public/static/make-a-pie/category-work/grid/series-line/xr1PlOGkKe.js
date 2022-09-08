@@ -1,0 +1,1 @@
+function getDataY(){var a=[80,78,96,88,56,30,130,78,66,89];return a}function getDataX(){var a=["一","二","三","四","五","六","七","八","九","十"];return a}var option;option={xAxis:[{type:"category",boundaryGap:!1,data:getDataX()}],yAxis:[{type:"value"}],series:[{name:"成交",type:"line",smooth:!0,itemStyle:{normal:{areaStyle:{type:"default"}}},data:getDataY()}]};

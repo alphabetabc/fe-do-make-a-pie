@@ -1,0 +1,2 @@
+let t=Date.now(),v=Math.random()*50+300;const data=Array(1e3).fill(0).map(e=>[t+=1e5,v+=Math.random()*21-10]),f=e=>`0${e}`.slice(-2),ts=e=>`${f(e.getHours())}:${f(e.getMinutes())}`,ds=e=>`${f(e.getMonth()+1)}-${f(e.getDate())}`;let tmp=-1;option={xAxis:{type:"time",axisLabel:{showMinLabel:!0,formatter:(e,s)=>{const a=new Date(e);return tmp!==a.getDate()?(tmp=a.getDate(),`${ts(a)}
+${ds(a)}`):`${ts(a)}`}}},yAxis:{type:"value"},series:[{type:"line",showSymbol:!1,data}]};

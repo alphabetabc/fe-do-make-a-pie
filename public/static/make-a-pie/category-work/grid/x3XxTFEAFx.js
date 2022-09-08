@@ -1,0 +1,1 @@
+option={xAxis:{show:!1},yAxis:{show:!0,min:0,max:30,interval:5,splitLine:{show:!1},axisLine:{lineStyle:{color:"#0796D0"}},axisTick:{inside:!0,length:10,lineStyle:{color:"#0796D0"}},axisLabel:{inside:!0,margin:20,color:"#FFF",fontSize:11}}};

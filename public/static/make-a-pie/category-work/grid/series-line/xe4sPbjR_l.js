@@ -1,0 +1,1 @@
+option={xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data:[820,932,901,934,"-","-",1320],type:"line",smooth:!1,z:-1,connectNulls:!0,lineStyle:{type:"dashed",color:"#999",width:1.5,opacity:.5}},{data:[820,932,901,934,"-","-",1320],type:"line",z:10,smooth:!1,lineStyle:{color:"#1991fc",width:2}}]};

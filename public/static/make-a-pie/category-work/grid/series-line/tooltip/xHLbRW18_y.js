@@ -1,0 +1,1 @@
+var Xdata=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],Sdata=[820,932,901,934,1290,1330,1320],Sdata2=[111,22,589,367,999,987,356];option={tooltip:{trigger:"axis"},xAxis:{type:"category",boundaryGap:!1,data:Xdata},yAxis:{type:"value"},series:[{data:Sdata,type:"line",areaStyle:{}},{data:Sdata2,type:"line",areaStyle:{}}]};

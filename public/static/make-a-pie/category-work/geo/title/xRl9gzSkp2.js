@@ -1,0 +1,1 @@
+var uploadedDataURL="/asset/get/s/data-1567128870005-VxHvNFmBk.geoJson";$.getJSON(uploadedDataURL,function(t){echarts.registerMap("sum",t),option={title:{text:"全国地图-精确到地市"},geo:{map:"sum",roam:!0,label:{show:!1}}},myChart.setOption(option)});

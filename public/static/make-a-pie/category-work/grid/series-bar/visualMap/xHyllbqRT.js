@@ -1,0 +1,1 @@
+option={xAxis:{type:"value",name:"x轴"},yAxis:{type:"value",name:"y轴"},series:[{data:[[1,11],[2,22],[3,33]],type:"bar"}],visualMap:{show:!0,seriesIndex:0,dimension:0,top:25,right:10,pieces:[{value:1,color:"#67E667",label:"GREEN"},{value:2,color:"#FF7373",label:"RED"},{value:3,color:"#FF3373",label:"RED"},{value:4,color:"#FFB273",label:"YELLOW"}]}};

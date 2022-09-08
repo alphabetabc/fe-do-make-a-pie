@@ -1,0 +1,2 @@
+option={tooltip:{trigger:"item"},legend:{top:"bottom",selectedMode:!1,textStyle:{fontSize:14},formatter:function(e){return e=="工业企业"?e+":"+1:e=="其他企业"?e+":"+2:e=="科研院校"?e+":"+3:e=="高校"?e+":"+4:e}},series:[{type:"pie",radius:["40%","60%"],avoidLabelOverlap:!1,label:{show:!0,position:"center",formatter:`经费
+结构`,fontSize:40},labelLine:{show:!1},data:[{value:1,name:"工业企业",itemStyle:{color:"#008000"}},{value:2,name:"其他企业",itemStyle:{color:"#FACC14"}},{value:3,name:"科研院校",itemStyle:{color:"#FF0000"}},{value:4,name:"高校",itemStyle:{color:"#008FE0"}}]}]};

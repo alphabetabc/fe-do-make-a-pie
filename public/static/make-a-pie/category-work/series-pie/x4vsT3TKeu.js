@@ -1,0 +1,1 @@
+option={series:[{name:"访问来源",type:"pie",radius:["60%","70%"],avoidLabelOverlap:!1,label:{show:!1},labelLine:{show:!1},itemStyle:{color:{type:"linear",x:1,y:0,x2:.05,y2:1,colorStops:[{offset:0,color:"#7D0425"},{offset:.25,color:"#9F004A"},{offset:.5,color:"#FF3E00"},{offset:.75,color:"#FFF200"},{offset:1,color:"#04FF00"}],global:!1}},data:[{value:1048,name:"搜索引擎"}]}]};

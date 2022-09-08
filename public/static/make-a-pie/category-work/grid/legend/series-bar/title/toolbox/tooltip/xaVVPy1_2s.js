@@ -1,0 +1,4 @@
+option={title:{text:"党员参加社会（社区）服务情况",top:10,left:10},tooltip:{trigger:"item",formatter:"{a} <br/>{b} : {c}"},toolbox:{show:!0,top:10,right:10,feature:{mark:{show:!0},magicType:{show:!0,type:["line","bar"]},restore:{show:!0},saveAsImage:{show:!0}}},grid:{top:60,right:70,bottom:30,left:60},legend:{top:32,left:"center",data:["参与率","参与时长"]},calculable:!0,xAxis:[{type:"category",data:["王老师","李老师","刘老师","赵老师"]}],yAxis:[{type:"value",name:`参
+与
+率`,nameLocation:"center",nameGap:35,nameRotate:0,nameTextStyle:{fontSize:16},min:0,max:100,axisLabel:{show:!0,showMinLabel:!0,showMaxLabel:!0,formatter:function(e){return e}}},{type:"value",name:`时
+长`,nameLocation:"center",nameGap:50,nameRotate:0,nameTextStyle:{fontSize:16},min:0,max:150,axisLabel:{show:!0,showMinLabel:!0,showMaxLabel:!0,formatter:function(e){return e}}}],series:[{name:"参与率",type:"bar",yAxisIndex:0,data:[39,53,79,68]},{name:"参与时长",type:"bar",yAxisIndex:1,data:[68,123,56,87]}]};

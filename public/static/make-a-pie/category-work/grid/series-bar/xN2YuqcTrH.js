@@ -1,0 +1,1 @@
+option={xAxis:[{type:"category",axisLabel:{interval:0,showMaxLabel:!0,showMinLabel:!0,fontSize:20},data:["Monwwwwwwwwww","Tueeeee","Weeeeeeeeeeeeed","Thhhhhhhhhhhhhu","Frrrrrrrrrrrrrrrrri","Sat","Sun"],axisTick:{alignWithLabel:!0}}],yAxis:[{type:"value"}],series:[{name:"直接访问",type:"bar",barWidth:"60%",data:[10,52,200,334,390,330,220]}]};

@@ -1,0 +1,1 @@
+for(var time=[],data=[],i=0;i<7;++i)time.push(new Date(new Date-1e3*60*60*24*i)),data.push(Math.ceil(Math.random()*100));option={xAxis:{data:time,type:"category",axisLabel:{formatter:function(a){return moment(a).format("LL")}}},yAxis:{},series:[{type:"line",data}]};

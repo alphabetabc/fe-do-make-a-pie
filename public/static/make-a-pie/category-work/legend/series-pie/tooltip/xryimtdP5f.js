@@ -1,0 +1,2 @@
+option={backgroundColor:"#FFF",tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},legend:{orient:"vertical",x:"left",data:["生产环节","流通环节 ","餐饮环节"]},series:[{name:"各环节抽样批次占比",type:"pie",selectedMode:"single",radius:[0,"10%"],center:["40%","20%"],color:["#33CC99","#CC6666","#FF9966","#3399CC"],label:{normal:{formatter:`{b}
+   ({d}%)`}},labelLine:{normal:{show:!0}},data:[{value:302,name:"生产环节"},{value:432,name:"流通环节"},{value:220,name:"餐饮环节"}]}]};

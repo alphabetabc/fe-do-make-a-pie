@@ -1,0 +1,1 @@
+var option={title:{text:"ECharts 入门示例"},tooltip:{},legend:{data:["销量1"]},xAxis:{data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]},yAxis:{min:0,max:4,axisLabel:{formatter:function(e){var t=[];return e==0?t.push("woo"):e<=1?t.push("好"):e<=2?t.push("很好"):e<=3?t.push("非常好"):t.push("完美"),t}}},series:[{name:"销量1",type:"bar",data:[1,4,2,3,2,0]}]};

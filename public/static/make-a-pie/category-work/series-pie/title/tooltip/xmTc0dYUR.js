@@ -1,0 +1,2 @@
+app.title="环形图",option={title:{text:"环形图常用样式"},tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},series:[{name:"详细数据",type:"pie",radius:["50%","70%"],avoidLabelOverlap:!1,label:{normal:{show:!1,position:"center",textStyle:{fontSize:30,fontWeight:"bolder"},formatter:e=>(console.log(e),e.value+`
+`+e.name)}},emphasis:{label:{show:!0}},labelLine:{normal:{show:!1}},data:[{value:335,name:"直接访问"},{value:310,name:"邮件营销"},{value:234,name:"联盟广告"},{value:135,name:"视频广告"},{value:1548,name:"搜索引擎"}]}]};

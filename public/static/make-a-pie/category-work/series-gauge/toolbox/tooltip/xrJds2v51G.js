@@ -1,0 +1,1 @@
+var option={tooltip:{formatter:"{a} <br/>{b} : {c}%"},toolbox:{feature:{restore:{},saveAsImage:{}}},series:[{name:"修改数值",type:"gauge",detail:{formatter:function(e,t){return e.toFixed(2)}},data:[{value:50.1,name:"完成率"}]}]};myChart.setOption(option,!0);

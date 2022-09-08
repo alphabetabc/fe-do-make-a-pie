@@ -1,0 +1,1 @@
+option={series:[{name:"访问来源",type:"pie",radius:["50%","70%"],avoidLabelOverlap:!1,hoverAnimation:!1,label:{normal:{show:!1,position:"center"},emphasis:{show:!1}},labelLine:{normal:{show:!1}},data:[{value:335,name:"直接访问",itemStyle:{normal:{color:"rgb(255,173,8"}}},{value:310,name:"邮件营销",itemStyle:{normal:{color:"#ccc"}}}]}]};

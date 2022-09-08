@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"axis"},color:["#0580f2","#e1575d",""],grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:{type:"category",boundaryGap:!1,data:["2010年","2010年","2010年","2010年","2010年","2010年","2010年"]},yAxis:{type:"value",axisTick:{show:!1},axisLine:{show:!1}},series:[{name:"邮件营销",type:"line",stack:"总量",data:[120,132,101,134,90,230,210]}]};

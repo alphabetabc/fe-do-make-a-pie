@@ -1,0 +1,3 @@
+var pieData=[{value:11231,name:"唐人街探案",itemStyle:{color:"blue"}},{value:22673,name:"少年的你",itemStyle:{color:"orange"}},{value:6231,name:"我的姐姐",itemStyle:{color:"yellow"}},{value:8231,name:"你的婚礼",itemStyle:{color:"pink"}},{value:9331,name:"八月未央",itemStyle:{color:"purple"}}],option={title:{text:"饼图",textStyle:{color:"red"}},tooltip:{show:!0},legend:{type:"plain"},series:[{type:"pie",data:pieData,label:{show:!0,formatter:function(e){return console.log(e),"电影："+e.data.name+`
+票房：`+e.data.value+`
+`},textStyle:{color:"green"}},roseType:"radius",selectedMode:"single",selectedOffset:30,radius:["0%","60%"],itemStyle:{shadowBlur:200,shadowColor:"blank"}}]};

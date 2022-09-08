@@ -1,0 +1,6 @@
+var DeadLineColors=["#000000","#330066","#0000FF","#2F4554"],Patch=["AAM589","2017-06-05","2017-07-05","GMS 7.1_R3","GMS 7.1_R4"],option={title:{text:"AAM589 CTS Report",subtext:"By Performance Team",position:"middle"},yAxis:{type:"time",splitNumber:8,min:"2017/2/24"},xAxis:{data:[`Security Patch
+2017-06-05`,`Security Patch
+2017-07-05`,"GMS 7.1_R3","GMS 7.1_R4"]},tooltip:{show:!0,trigger:"axis",formatter:function(t){var e="",r=t[0].data,a=t[1].data,o=t[0].name;return r=r,a=a,e+=o+"</br>",e+=t[0].seriesName+":"+r+"</br>",e+=t[1].seriesName+":"+a+"</br>",e}},grid:{left:"12%",right:"10%"},series:[{name:"开始时间",type:"bar",stack:"总量",barWidth:"14%",itemStyle:{normal:{color:"rgba(0,0,0,0)"}},markLine:{data:[{name:"SoftWare--->"+Patch[0],yAxis:"2017/07/03",label:{normal:{position:"middle",formatter:`{b}
+TestDate --->{c}
+GMS--->`+Patch[3]+`
+Security Patch--->`+Patch[1]}},lineStyle:{normal:{color:"#0000FF"}}}]},label:{normal:{show:!0,position:"insideTop",textStyle:{fontStyle:"oblique",color:"#000099"}}},data:["2017/5/5","2017/6/7","2017/3/24","2017/6/19"]},{name:"结束时间",type:"bar",stack:"总量",barWidth:"20%",itemStyle:{normal:{color:"#00CD00",barBorderRadius:0,shadowColor:"rgba(0, 0, 0, 0)",shadowBlur:0}},label:{normal:{show:!0,position:"top",textStyle:{fontStyle:"oblique",color:"#FF0000"}}},data:["2017/8/3","2017/9/5","2017/5/23","2017/8/18"]}]};

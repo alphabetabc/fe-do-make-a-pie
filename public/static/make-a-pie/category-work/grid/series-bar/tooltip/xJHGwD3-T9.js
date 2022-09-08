@@ -1,0 +1,1 @@
+option={color:["#3398DB"],tooltip:{trigger:"axis",axisPointer:{type:"line"}},grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:[{type:"category",data:[2012,2013,2014,2015,2016,2017,2018,2019],axisTick:{alignWithLabel:!0}}],yAxis:[{type:"value"}],series:[{name:"# of Grants",type:"bar",barWidth:"60%",data:[42,38,38,50,90,155,156,182]}]};

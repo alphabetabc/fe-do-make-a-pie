@@ -1,0 +1,1 @@
+let data=[.47];option={series:[{type:"liquidFill",data,direction:"right",radius:"80%",color:["#00c2ff"],center:["50%","50%"],outline:{borderDistance:3,itemStyle:{borderWidth:8,borderColor:"#00c2ff",shadowBlur:10,shadowColor:"rgba(63, 218, 255, 0.5)"}},backgroundStyle:{color:"rgb(255,0,255,0.01)"},label:{show:!1}}]};

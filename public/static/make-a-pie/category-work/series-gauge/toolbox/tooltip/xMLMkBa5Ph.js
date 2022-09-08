@@ -1,0 +1,1 @@
+option={tooltip:{formatter:"{a} <br/>{b} : {c}%"},toolbox:{feature:{restore:{},saveAsImage:{}}},series:[{name:"业务指标",type:"gauge",detail:{formatter:"{value}%"},min:0,max:120,axisLine:{lineStyle:{color:[[.58,"orange"],[.65,"green"],[.83,"#B56FB5"],[1,"#8C208C"]],width:2,shadowColor:"#fff",shadowBlur:10}},data:[{value:70,name:"完成率"}]}]};

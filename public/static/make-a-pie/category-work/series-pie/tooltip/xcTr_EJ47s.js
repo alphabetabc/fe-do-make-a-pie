@@ -1,0 +1,2 @@
+const list=[{name:"低",value:57},{name:"中",value:103},{name:"高",value:147}];option={backgroundColor:"#031d33",tooltip:{show:!0},series:[{type:"pie",radius:"80%",center:["50%","50%"],itemStyle:{normal:{borderWidth:5,borderColor:"#003359"}},label:{show:!0,position:"inside",align:"center",verticalAlign:"middle",formatter(e){return console.log("label params",e),`{name|${e.name}}
+ {value|${e.value}}`},rich:{name:{fontSize:20},value:{fontSize:30,lineHeight:40}}},data:list,labelLine:{show:!1}}]};

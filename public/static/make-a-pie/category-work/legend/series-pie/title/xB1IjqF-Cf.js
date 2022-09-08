@@ -1,0 +1,3 @@
+app.title="嵌套环形图",option={title:{text:"湖北省车辆占比",subtext:"纯属虚构",x:"center"},legend:{orient:"vertical",x:"left",data:["旅游客运","班线客运","普货","危险品"]},series:[{name:"车辆占比",type:"pie",radius:["40%","55%"],label:{normal:{formatter:`{a|{a}}{abg|}
+{hr|}
+  {b|{b}：}{c}  {per|{d}%}  `,backgroundColor:"#eee",borderColor:"#aaa",borderWidth:1,borderRadius:4,rich:{a:{color:"#999",lineHeight:22,align:"center"},hr:{borderColor:"#aaa",width:"100%",borderWidth:.5,height:0},b:{fontSize:16,lineHeight:33},per:{color:"#eee",backgroundColor:"#334455",padding:[2,4],borderRadius:2}}},emphasis:{show:!0,textStyle:{fontSize:"30",fontWeight:"bold"}}},data:[{value:348,name:"旅游客运"},{value:251,name:"班线客运"},{value:147,name:"普货"},{value:102,name:"危险品"}]}]};

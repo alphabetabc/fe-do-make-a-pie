@@ -1,0 +1,1 @@
+app.title="嵌套环形图",option={tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},series:[{name:"访问来源",type:"pie",radius:["28%","35%"],label:{normal:{formatter:"{b} {c}"}},data:[{value:48,name:"续建待复工项目"},{value:53,name:"新开工项目"},{value:118,name:"续建复工项目"},{value:214,name:"拟开工项目"}]}]};

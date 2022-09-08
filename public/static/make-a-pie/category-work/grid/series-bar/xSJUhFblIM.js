@@ -1,0 +1,1 @@
+option={xAxis:{type:"category",data:["鲜花","星星","香蕉","嫌弃"]},yAxis:{type:"value"},series:[{data:[120,200,150,80],type:"bar",itemStyle:{normal:{color:function(a){var r=["rgb(164,205,238)","rgb(42,170,227)","rgb(25,46,94)","rgb(195,229,235)"];return r[a.dataIndex]}},emphasis:{shadowBlur:10,shadowOffsetX:0,shadowColor:"rgba(0, 0, 0, 0.5)"}}}]};

@@ -1,0 +1,1 @@
+var data={cate:[1,2,3,4,5,6,7,8],series:{A:[1,2,3,4,5,6,7,8],B:[[2,3],[3,3],[6,8]]}},legends=Object.keys(data.series),series=legends.map(e=>({name:e,data:data.series[e],type:"line"}));option={legend:{data:legends},xAxis:{data:data.cate},yAxis:{show:!0},tooltip:{show:!0},series};

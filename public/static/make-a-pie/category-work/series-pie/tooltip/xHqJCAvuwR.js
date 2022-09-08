@@ -1,0 +1,2 @@
+var option={tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},color:["red","#ccc"],series:[{name:"XXX站点超标率",type:"pie",center:["50%","50%"],radius:["70%","80%"],avoidLabelOverlap:!1,hoverAnimation:!1,label:{normal:{show:!0,position:"center",color:"red",fontSize:18,fontWeight:"bold",formatter:`{d}%
+{b}`}},labelLine:{normal:{show:!1}},data:[{value:40,name:"超标",label:{normal:{show:!0}}},{value:60,name:"正常",label:{normal:{show:!1}}}]}]};

@@ -1,0 +1,2 @@
+var percent=30;option={series:[{type:"pie",radius:["28%","33%"],label:{normal:{show:!1}},data:[{name:"",value:100,itemStyle:{normal:{color:"#3da1ee",shadowBlur:2,shadowColor:"#3da1ee"}}}],zlevel:1},{name:"main",type:"pie",radius:["25%","42%"],data:[{name:"完成率",value:percent,label:{show:!0,position:"center",fontSize:40,formatter:`{d}% 
+完成率`},labelLine:{show:!1},itemStyle:{normal:{color:"#f2c967",shadowBlur:10,shadowColor:"#f2c967"}}},{value:100-percent,itemStyle:{normal:{color:"transparent"}}}],zlevel:2}]};

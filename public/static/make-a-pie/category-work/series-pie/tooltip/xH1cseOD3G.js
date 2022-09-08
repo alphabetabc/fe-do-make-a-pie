@@ -1,0 +1,1 @@
+option={backgroundColor:"#FFFFFF",tooltip:{trigger:"item",formatter:"{a} <br/>{b} : {c} ({d}%)"},series:[{name:"高血压患病率",type:"pie",radius:["18%","28%"],center:["42%","35%"],color:["#36e4bb","#eeeeee"],data:[{value:28,name:"有病"},{value:10,name:"没病"}],itemStyle:{normal:{label:{show:!1}}}}]};

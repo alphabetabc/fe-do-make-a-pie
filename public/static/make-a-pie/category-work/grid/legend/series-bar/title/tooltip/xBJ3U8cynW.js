@@ -1,0 +1,1 @@
+option={title:{show:!0,text:"我的第一个echart示例",textStyle:{color:"#f00",fontSize:30,fontWeight:"lighter"}},grid:{show:!0},tooltip:{},legend:{data:["示例"]},xAxis:{show:!1,data:["项一","项二","项三","项四"]},yAxis:{show:!1},series:[{name:"示例",type:"bar",data:[10,20,30,40]}]};

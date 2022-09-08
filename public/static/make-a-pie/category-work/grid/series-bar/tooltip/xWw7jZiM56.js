@@ -1,0 +1,3 @@
+option={tooltip:{trigger:"axis",showContent:!1,axisPointer:{type:"shadow",label:{show:!0,margin:-60,backgroundColor:"rgba(0,0,0,0)",formatter:function(t){console.log(arguments);var o=t.seriesData;return`产量
+
+`+o[0].data}},shadowStyle:{color:{type:"linear",x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:"rgba(0,0,0,.2)"},{offset:1,color:"rgba(4,4,68,.8)"}],global:!1}}}},xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data:[120,200,150,80,70,110,130],type:"bar",itemStyle:{color:"rgba(0,0,0,0)"},stack:"sum",silent:!0},{data:[10,10,10,10,10,10,10],type:"bar",stack:"sum",label:{formatter:function(){return console.log(arguments),"1"},show:!0,position:"top"}}]};

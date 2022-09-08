@@ -1,0 +1,1 @@
+var handred=100,point=66;option={series:[{name:"circle",type:"pie",clockWise:!0,radius:["50%","66%"],itemStyle:{normal:{label:{show:!1},labelLine:{show:!1}}},hoverAnimation:!1,data:[{value:point,name:"占比",itemStyle:{normal:{color:"#ffaf02",label:{show:!1},labelLine:{show:!1}}}},{name:"剩余",value:handred-point,itemStyle:{normal:{color:"#ffefcc"}}}]}]};

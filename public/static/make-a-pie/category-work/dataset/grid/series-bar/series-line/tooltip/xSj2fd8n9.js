@@ -1,0 +1,1 @@
+option={yAxis:{show:!0,type:"value"},xAxis:{show:!0,type:"category"},barWidth:15,series:[{type:"bar",encode:{x:1,y:0}},{type:"line",encode:{x:1,y:2}}],dataset:{source:[[12,"羊毛",30,40,50],[10,"白菜",20,30,40],[30,"毛衣",40,50,60]]},tooltip:{show:!0,formatter:e=>{console.log(e,"--params")}}};

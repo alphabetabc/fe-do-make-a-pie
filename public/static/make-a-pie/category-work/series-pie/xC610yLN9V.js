@@ -1,0 +1,1 @@
+const data=75;option={series:{type:"pie",radius:["50%","55%"],hoverAnimation:!1,data:[{value:75,label:{normal:{color:"#6AA0E4",fontSize:22,fontWeight:"bold",formatter:function(e){return e.value+"%"},position:"center",show:!0}},itemStyle:{normal:{color:"#6AA0E4"}}},{value:100-75,name:"",labelLine:{show:!1},itemStyle:{normal:{color:"#D8D8D8"},emphasis:{color:"#D8D8D8"}}}]}};

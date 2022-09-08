@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ResizeObserver from "rc-resize-observer";
 import { Space, Divider, Modal } from "antd";
 import * as api from "@Common/api";
+import { STATIC_PATCH } from "@Common/constant";
 import TableVirtualList from "@Components/table-virtual-list";
 import ChartView from "../components/chart-view";
 
@@ -56,7 +57,7 @@ const Gallery = () => {
 
     useEffect(() => {
         let abort = false;
-        api.fetchJson("/static/make-a-pie/assets.json").then((data) => {
+        api.fetchJson(`${STATIC_PATCH}/make-a-pie/assets.json`).then((data) => {
             if (abort) return;
             setTableData(data);
         });

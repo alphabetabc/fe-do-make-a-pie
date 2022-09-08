@@ -1,0 +1,2 @@
+option={name:"心率简化",backgroundColor:"#FFFFFF",title:{text:`心率
+88次`,textStyle:{fontWeight:"normal",fontSize:24,color:"#fa8d55"},left:"2%",top:"5%"},grid:{left:"0%",right:"3%",bottom:"0%",containLabel:!0},xAxis:[{type:"category",boundaryGap:!1,data:["9.23","10.3","10.11","10.15","10.26","11.2"],axisLabel:{show:!1},axisLine:{show:!1},axisTick:{show:!1}}],yAxis:[{show:!1,min:80,max:97}],series:[{name:"心率",type:"line",smooth:!0,symbol:"circle",showSymbol:!1,lineStyle:{normal:{width:5,color:"#fa8d55"}},data:[86,87,87,87,86,85]}]};

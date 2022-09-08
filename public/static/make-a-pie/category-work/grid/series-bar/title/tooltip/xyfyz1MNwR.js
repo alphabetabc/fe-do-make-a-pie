@@ -1,0 +1,2 @@
+option={title:{subtext:"百分比(%)"},tooltip:{trigger:"axis"},grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:{data:["挖土方","挖石方","填方","涵洞通道"]},yAxis:[{type:"value",splitLine:{show:!1},splitArea:{show:!0}}],series:[{type:"bar",itemStyle:{normal:{color:function(t){var e=["#2eddc1","#FCCE10","#E87C25","#27727B","#9efdc6"];return e[t.dataIndex]},label:{show:!0,position:"top",formatter:`{b}
+{c}`}}},data:[20,82,91,34]}]};

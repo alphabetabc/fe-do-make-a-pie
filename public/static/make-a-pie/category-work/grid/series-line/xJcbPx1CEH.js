@@ -1,0 +1,1 @@
+var data1=[],data2=[];const alpha=.8,bg=255,clr=90,n=10;let currentClr=255;for(let t=0;t<10;t++)data1.push([t,currentClr]),currentClr=currentClr*(1-.8)+90*.8;for(let t=0;t<10;t++)a=Math.pow(.8,1/t/t/t),data2.push([t,255*(1-a)+90*a]);option={xAxis:{type:"value"},yAxis:{type:"value"},series:[{type:"line",data:data1},{type:"line",data:data2}]};

@@ -1,8 +1,4 @@
-import { BASE_URL } from "@Common/constant";
-
-const pathFormatter = (path: string) => `/${BASE_URL}/${path.replace("/", "")}`;
-
-const request = (path: string) => fetch(pathFormatter(path));
+const request = (path: string) => fetch(path);
 
 // 导入json
 export const fetchJson = (path: string) => request(path).then((res) => res.json());

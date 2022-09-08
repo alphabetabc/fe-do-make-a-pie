@@ -1,0 +1,1 @@
+option={series:[{data:[],itemStyle:{emphasis:{areaColor:"#ffffff"},normal:{areaColor:"#ffffff",borderColor:"#ECEFF1",borderWidth:1}},label:{normal:{show:!1}},mapType:"china",map:"world",type:"map",zoom:1.2}],toolbox:{show:!0,feature:{saveAsImage:{show:!0,excludeComponents:["toolbox"],pixelRatio:2}}},backgroundColor:"#EEF0F1"};

@@ -1,0 +1,13 @@
+var data=[{name:"家庭关系",value:[{name:"张大海",relaDetail:"父亲"},{name:"李梅",relaDetail:"母亲"}]},{name:"舍友关系",value:[{name:"张三",relaDetail:"舍友",major:"19级化学类"},{name:"李四",relaDetail:"舍友",major:"18级食品类"},{name:"王五",relaDetail:"舍友",major:"17级技术类"}]},{name:"师生关系",value:[{name:"李慧珍",relaDetail:"授课教师",post:"研究员",lesson:"工业生产应用有机化学"},{name:"王沥川",relaDetail:"授课教师",post:"研究员",lesson:"工业生产应用有机化学"},{name:"赵雪琴",relaDetail:"授课教师",post:"研究员",lesson:"工业生产应用有机化学"},{name:"李晨曦",relaDetail:"授课教师",post:"研究员",lesson:"工业生产应用有机化学"},{name:"张铭轩",relaDetail:"授课教师",post:"研究员",lesson:"工业生产应用有机化学"}]}];function calcPosition(t){let a=t.length>1;var l=a?(t.length-1)/2*5:1,o=[],s=t.length?[{coords:[[8,l],[10,l]]}]:[],r=t.length?[[8,l]]:[];return t.map((i,n)=>{let m=[],p=[];i.value.map((e,c)=>{m[c]={...e,value:[15+c*8,a?n*5:1]}}),o.push({name:i.name,type:"graph",coordinateSystem:"cartesian2d",draggable:!1,symbol:"rect",symbolSize:[80,40],label:{show:!0},hoverAnimation:!1,tooltip:{backgroundColor:"#fff",formatter:e=>{if(e.seriesName==="家庭关系")return`
+                    <span style="font-size:16px;color:#333">${e.name}</span><br/>
+                    关系：${e.data.relaDetail}
+                    `;if(e.seriesName==="舍友关系")return`
+                    <span style="font-size:16px;color:#333">${e.name}</span><br/>
+                    关系：${e.data.relaDetail}<br/>
+                    年级专业：${e.data.major}
+                    `;if(e.seriesName==="师生关系")return`
+                    <span style="font-size:16px;color:#333">${e.name}</span><br/>
+                    关系：${e.data.relaDetail}<br/>
+                    专业技术职务：${e.data.post}<br/>
+                    授课课程：${e.data.lesson}
+                    `},textStyle:{color:"#666"}},data:m}),s.push({coords:[[10,l],[10,a?n*5:1],[12,a?n*5:1]]}),r.push([12,a?n*5:1])}),console.log(s),{legend:{data:["家庭关系","舍友关系","师生关系"]},tooltip:{type:"item"},title:{text:"Awesome Chart",show:!1},xAxis:{type:"value",max:a?"auto":50,show:!1},yAxis:{type:"value",max:a?(t.length-1)/2*10:2,show:!1},series:[{type:"graph",coordinateSystem:"cartesian2d",draggable:!1,symbol:"rect",symbolSize:[80,40],label:{show:!0},hoverAnimation:!1,tooltip:{show:!1},data:[{name:"张子山",value:[5,t.length>1?(t.length-1)/2*5:1]}]},{type:"lines",polyline:!0,coordinateSystem:"cartesian2d",lineStyle:{normal:{width:2}},symbol:"circle",symbolSize:5,data:s},{type:"scatter",coordinateSystem:"cartesian2d",lineStyle:{normal:{width:2}},symbol:"circle",symbolSize:10,itemStyle:{opacity:1,color:"rgba(255,255,255,1)",borderColor:"red"},data:r},...o]}}let option=calcPosition(data);myChart.setOption(option),myChart.on("legendselectchanged",function(t){const a=[];data.forEach((o,s)=>{t.selected[o.name]&&a.push(o)});var l=calcPosition(a);myChart.setOption(l)});

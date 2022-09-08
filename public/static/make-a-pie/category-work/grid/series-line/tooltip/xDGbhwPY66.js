@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"axis",extraCssText:"transform: rotate(90deg)"},xAxis:{type:"value",position:"top",nameRotate:-90,axisLabel:{rotate:90},scale:!0},yAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],inverse:"true",axisLabel:{rotate:-90}},series:[{data:[820,932,901,934,1290,1330,1320],type:"line",smooth:!0}]};
