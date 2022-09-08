@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import classNames from "classnames";
 
 import * as echarts from "echarts";
 import "echarts-gl";
@@ -6,7 +7,6 @@ import "echarts-gl";
 import * as api from "@Common/api";
 
 import "./index.less";
-import classNames from "classnames";
 
 const DEFAULT_OPTION = {
     series: [

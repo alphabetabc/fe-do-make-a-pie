@@ -1,5 +1,10 @@
-// import * as echarts from "echarts";
-// import "echarts-gl";
+// import * as echarts from "https://cdn.jsdelivr.net/npm/echarts/dist/echarts.esm.js";
+
+// window.echarts = echarts;
+// import "https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.js";
+
+console.log("log------------", echarts);
+
 const domElement = {
     select: document.getElementById("select"),
     codeEl: document.getElementById("code"),

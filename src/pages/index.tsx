@@ -25,7 +25,7 @@ type RouteObjectWithName = RouteObject & {
 
 const routes: Array<RouteObjectWithName> = [
     {
-        path: "/",
+        path: `/`,
         element: <Main />,
         children: [
             {
@@ -41,7 +41,7 @@ const routes: Array<RouteObjectWithName> = [
         ],
     },
     {
-        path: "/demo",
+        path: `/demo`,
         element: <Outlet />,
         children: [
             {
