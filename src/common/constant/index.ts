@@ -3,6 +3,6 @@
  */
 const BASE_URL = import.meta.env.PROD ? __APP_BASE_URL : "";
 
-const STATIC_PATCH = `${BASE_URL}/static`;
+const STATIC_PATCH = `${BASE_URL ? "/" : ""}${BASE_URL}/static`;
 
 export { BASE_URL, STATIC_PATCH };
