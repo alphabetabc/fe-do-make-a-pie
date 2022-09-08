@@ -1,0 +1,7 @@
+node_modules
+pulic
+.vite.cache
+.vscode
+vendors
+vite.config.ts
+bak
