@@ -17,6 +17,10 @@ const DEFAULT_OPTION = {
     ],
 };
 
+const GEO_JSON_URL = {
+    CHINA: "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
+};
+
 const ChartView = (props: any) => {
     const domElRef = useRef<HTMLDivElement | null>(null);
 
@@ -32,6 +36,11 @@ const ChartView = (props: any) => {
         setChartIns(chart);
         const ref = localFlag.current;
         ref.dispose = false;
+
+        api.fetchJson(GEO_JSON_URL.CHINA).then((geoJson) => {
+            ec.registerMap("chinaMap", geoJson);
+        });
+
         return () => {
             chart.dispose();
             ref.dispose = true;
@@ -60,21 +69,37 @@ const ChartView = (props: any) => {
         if (!chartIns || localFlag.current.dispose) return;
 
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const echarts = ec;
 
         var option;
         let myChart: any = chartIns;
         try {
-            // eslint-disable-next-line no-eval
-            let opt = eval(code);
+            const runCode = code
+                .replace(/options/, "option")
+                .replaceAll("china", "chinaMap")
+                .replace(/(var uploadedDataURL)|(uploadedDataURL)/gi, "assets.uploadedDataURL");
+            console.log("%c[runCode]", "color:green;", runCode);
+            const assets = {};
+            Object.defineProperty(assets, "uploadedDataURL", {
+                set() {
+                    return true;
+                },
+                get() {
+                    return GEO_JSON_URL.CHINA;
+                },
+            });
+            // eslint-disable-next-line no-new-func
+            const sandbox = new Function("echarts", "assets", "myChart", `${runCode}; return option`);
+            myChart.clear();
+            let opt = sandbox(ec, assets, myChart);
             if (opt && !option) {
                 option = opt;
             }
+
             if (!option) {
                 console.log("[OPTION]", props.chartId, option);
                 return;
             }
-            myChart.clear();
+            // myChart.clear();
             myChart.setOption(option);
         } catch (error: any) {
             setErr(error.message);
