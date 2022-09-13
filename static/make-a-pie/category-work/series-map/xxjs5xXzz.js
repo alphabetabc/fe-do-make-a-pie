@@ -1,0 +1,1 @@
+myChart.showLoading(),$.get("https://unpkg.com/echarts@3.6.2/map/json/china-cities.json",function(i){myChart.hideLoading(),echarts.registerMap("china-cities",i),option={series:[{name:"china",type:"map",map:"china-cities"}]},myChart.setOption(option)});

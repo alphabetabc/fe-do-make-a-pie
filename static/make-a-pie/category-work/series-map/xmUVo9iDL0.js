@@ -1,0 +1,1 @@
+option={series:[{name:"chinaMap",type:"map",map:"world",roam:!0,itemStyle:{emphasis:{label:{show:!0}}},center:[115.97,29.71],zoom:4,label:{normal:{show:!0,position:"center",formatter:"{b}"}},data:[{name:"山东省",value:"1000"}],zlevel:3}]};

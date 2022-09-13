@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"axis"},xAxis:{type:"category",boundaryGap:!1,data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},visualMap:{show:!1,type:"piecewise",seriesIndex:0,pieces:[{gt:920,color:"green"},{gt:0,lt:920,color:"red"}]},series:[{data:[820,932,901,934,1290,1330,1320],smooth:!0,type:"line"}]};

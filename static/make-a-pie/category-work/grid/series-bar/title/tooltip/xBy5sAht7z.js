@@ -1,0 +1,1 @@
+option={title:{text:"排名"},tooltip:{trigger:"axis",axisPointer:{type:"shadow"},formatter:function(t){console.log(t[0].data);var a=t[0].data[0],e=t[0].data[1];return a+"<br />第"+e}},xAxis:{type:"category",data:["石家庄","保定","邢台","邯郸"]},yAxis:{type:"category",name:"名次",data:["四","三","二","一"]},series:[{type:"bar",data:[["石家庄","一"],["保定","二"],["邢台","四"],["邯郸","三"]]}]};

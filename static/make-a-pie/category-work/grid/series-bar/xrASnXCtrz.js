@@ -1,0 +1,5 @@
+var yAxisData=["TOP1","TOP2","TOP3","TOP4","TOP5"];option={backgroundColor:"#031038",grid:{left:40,bottom:-10,right:70,top:30},yAxis:[{inverse:!0,data:yAxisData,axisLabel:{show:!1,textStyle:{color:"#8db0ff",fontSize:16,align:"left"},formatter:`{value}
+{a|占位}
+{a|占位}`,rich:{a:{color:"transparent",lineHeight:24}}},splitLine:{show:!1},axisTick:{show:!1},axisLine:{show:!1}},{inverse:!1,data:["服装","矿产","服务业","建筑业","金融业"],axisLabel:{inside:!0,textStyle:{color:"#8db0ff",fontSize:16,align:"right"},formatter:`{value}
+{a|占位}
+{a|占位}`,rich:{a:{color:"transparent",lineHeight:24,fontFamily:"digital"}}},offset:0,splitLine:{show:!1},axisTick:{show:!1},axisLine:{show:!1}}],xAxis:{max:120,show:!1},series:[{type:"bar",barGap:"-100%",silent:!0,itemStyle:{color:"rgba(255, 255, 254, 0.2)"},barWidth:15,data:[120,120,120,120,120]},{type:"bar",data:[120,100,90,60,30],barWidth:15,label:{position:[10,10],normal:{position:[0,-24],show:!0,textStyle:{color:"#8db0ff",fontSize:16}}},itemStyle:{normal:{color:new echarts.graphic.LinearGradient(0,0,1,0,["#007AFF","#00FFFF"].map((a,e)=>({color:a,offset:e})))}}}]};

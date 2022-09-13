@@ -1,0 +1,1 @@
+var tips=100;option={title:[{text:tips*1+"%",x:"center",y:"center",textStyle:{color:"#747474",fontSize:30}}],series:[{name:"火灾",type:"pie",radius:["30%","31%"],center:["50%","50%"],hoverAnimation:!1,label:{normal:{show:!1}},data:[{value:tips,itemStyle:{normal:{color:"#fb358a",shadowBlur:10,shadowColor:"#fb358a"}}},{value:100-tips}]}]};

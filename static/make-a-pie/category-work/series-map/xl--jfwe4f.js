@@ -1,0 +1,1 @@
+var uploadedDataURL="/asset/get/s/data-1592323490338-uZNa8Om2p.json";$.getJSON(uploadedDataURL,function(a){echarts.registerMap("ChinaFull",a),myChart.setOption({series:[{type:"map",map:"ChinaFull",roam:!0}]})});

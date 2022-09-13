@@ -1,0 +1,1 @@
+option={xAxis:{interval:10,min:30,axisLabel:{formatter:function(a){if(a>30&&a%20===0)return a}},axisTick:{show:!1},splitLine:{lineStyle:{color:["transparent","#aaa"]}}},yAxis:{data:["a"],axisTick:{show:!1}},series:[{type:"bar",data:[80],stack:"x",barWidth:30},{type:"bar",data:[80],stack:"x"},{type:"bar",data:[100],stack:"x"}]};

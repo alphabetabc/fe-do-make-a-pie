@@ -1,0 +1,1 @@
+var uploadedDataURL="/asset/get/s/data-1534168244781-r1ph3-JLm.json";option={title:{text:"Awesome Chart"},geo:{map:"Tina"}},$.getJSON(uploadedDataURL,function(t){echarts.registerMap("Tina",t),myChart.setOption(Option)});

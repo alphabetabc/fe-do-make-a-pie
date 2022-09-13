@@ -1,0 +1,2 @@
+option={backgroundColor:"#000000",tooltip:{show:!0},title:{show:!1},legend:{show:!1},series:[{type:"pie",name:"",radius:["30%","65%"],hoverAnimation:!0,label:{normal:{show:!0,formatter:`{title|{b}}
+{title|{c}件,{d}%}`,rich:{title:{padding:[3,-70]}}},emphasis:{show:!0}},labelLine:{length:10,length2:100},data:[{name:"公司1",value:100},{name:"公司2",value:100},{name:"公司3",value:100},{name:"公司4",value:100}]}]};

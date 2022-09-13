@@ -1,0 +1,1 @@
+function getData(e){var t=[];for(let a=0;a<e;a++)t.push({name:a,value:Math.random(a)*10+5,itemStyle:{color:"rgb("+Math.random(a)*255+", 255,"+Math.random(a)*255+" )"}});return t}var data=getData(7);option={xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data,type:"bar"}]};

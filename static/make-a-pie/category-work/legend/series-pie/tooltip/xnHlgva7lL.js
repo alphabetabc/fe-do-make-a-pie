@@ -1,0 +1,2 @@
+option={tooltip:{trigger:"item",formatter:"{b} : {c} ({d}%)"},legend:{x:"center",bottom:"20px",data:["入金","出金"]},series:[{type:"pie",radius:"58%",center:["50%","35%"],roseType:"radius",color:["#F44F6C","#33BFA3"],startAngle:180,data:[{value:1784,name:"入金"},{value:568,name:"出金"}],label:{normal:{textStyle:{fontSize:10},formatter:function(e){return e.name+"("+Math.round(e.percent)+`%)
+`+e.value}}},itemStyle:{normal:{labelLine:{length:5,length2:5,show:!0}}}}]};

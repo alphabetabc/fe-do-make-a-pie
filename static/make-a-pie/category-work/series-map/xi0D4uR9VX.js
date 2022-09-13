@@ -1,0 +1,1 @@
+var uploadedDataURL="/asset/get/s/data-1563939176692-YEnQYr5sd.json";$.get(uploadedDataURL,function(t){echarts.registerMap("舟山市",t),option={series:[{label:{normal:{show:!0},emphasis:{show:!0}},type:"map",zoom:2,roam:!0,map:"舟山市"}]},myChart.setOption(option)});

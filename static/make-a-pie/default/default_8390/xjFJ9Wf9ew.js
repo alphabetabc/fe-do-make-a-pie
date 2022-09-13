@@ -1,0 +1,1 @@
+const currentStockPrice=50,strikePrice=52,count=100,min=0,max=100,data=[];function buyCallOption(t){return Math.max(t-52,-2)*100}for(let t=0;t<=100;t++)data.push([t,buyCallOption(t)]);console.log(data),option={darkMode:!0,title:{text:"买入看涨期权"},xAxis:{type:"value",data:[0,25,50,100],min:0,max:100},yAxis:{min:-200},series:[{type:"line",data}]};

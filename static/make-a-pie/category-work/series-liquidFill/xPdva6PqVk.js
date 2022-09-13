@@ -1,0 +1,1 @@
+var option={series:[{type:"liquidFill",data:[.6,.5,.4,.3],itemStyle:{shadowBlur:0},outline:{borderDistance:0,itemStyle:{borderWidth:5,borderColor:"#156ACF",shadowBlur:20,shadowColor:"rgba(255, 0, 0, 1)"}}}]};

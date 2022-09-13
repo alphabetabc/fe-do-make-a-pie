@@ -1,0 +1,1 @@
+option={color:["#3f89ee"],backgroundColor:"#20263f",polar:{center:["50%","50%"],radius:"80%"},angleAxis:{show:!1,startAngle:90,min:0,max:100},radiusAxis:{type:"category",show:!0,data:["4级权重媒体"]},series:[{type:"bar",coordinateSystem:"polar",barWidth:20,barCategoryGap:"40%",borderWidth:6,data:[80],itemStyle:{barBorderRadius:2,color:"red",borderColor:"green",borderWidth:0}}]};

@@ -1,0 +1,2 @@
+option={backgroundColor:"#fff",title:{text:"各环节抽样批次占比"},tooltip:{trigger:"item",formatter:"{a} <br/>{b}: {c} ({d}%)"},color:["#33CC99","#CC6666","#FF9966","#3399CC"],legend:{width:"55%",orient:"vertical",left:"70%",top:"38%",data:["生产环节","流通环节 ","餐饮环节"]},series:[{name:"各检查类型违规占比",type:"pie",radius:["0","20%"],label:{normal:{formatter:`{b}
+{d}%`}},itemStyle:{normal:{label:{show:!1},labelLine:{show:!1}}},data:[{value:1800,name:"生产环节",selected:!0,label:{show:!0},labelLine:{show:!0}},{value:2e3,name:"流通环节"},{value:1500,name:"餐饮环节"}]}]};

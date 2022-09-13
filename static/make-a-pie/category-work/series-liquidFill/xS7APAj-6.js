@@ -1,0 +1,1 @@
+var value=.56,option={backgroundColor:"#1b2735",series:[{type:"liquidFill",radius:"80%",itemStyle:{color:"#afa"},color:"#68cffe",data:[value,value],outline:{show:!1},backgroundStyle:{borderWidth:2,borderColor:"#68cffe",color:"transparent"},label:{normal:{textStyle:{fontSize:50,color:"#D94854"}}}}]};

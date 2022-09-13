@@ -1,0 +1,1 @@
+option={backgroundColor:"#000",visualMap:{min:0,max:1e4,show:!1,calculable:!0,color:["#0bc7f3"],textStyle:{color:"#fff"}},geo:{map:"world",label:{emphasis:{show:!1}},roam:!0,layoutCenter:["50%","50%"],itemStyle:{normal:{color:"#04284e",borderColor:"#5bc1c9"},emphasis:{color:"rgba(37, 43, 61, .5)"}}}};

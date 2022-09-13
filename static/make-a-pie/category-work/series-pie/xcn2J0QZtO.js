@@ -1,0 +1,1 @@
+var num1=4,num2=100-num1;option={color:["#47DA24","#1766FF"],series:[{type:"pie",data:[{value:num1,name:num1+"%"},{value:num2,name:num2+"%"}],labelLine:{normal:{length:2,lineStyle:{}}},label:{normal:{textStyle:{}}}}]};

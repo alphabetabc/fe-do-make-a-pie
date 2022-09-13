@@ -1,0 +1,1 @@
+option={xAxis:[{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],onZero:!1,show:!0,axisLabel:{margin:-180}}],yAxis:[{type:"value"},{}],series:[{data:[3,10,-9,3,-3,19,15],type:"line"}]};

@@ -1,0 +1,1 @@
+option={backgroundColor:"#ffffff",tooltip:{trigger:"item",formatter:"{b}: {c} ({d}%)",color:"rgba(36,37,41,0.8)",textStyle:{color:"#fff"}},series:[{type:"pie",radius:["12%","20%"],center:["50%","51%"],color:["#4285F4","#A1C2FA","#E2E5E9"],label:{normal:{show:!1,position:"left"}},data:[{value:3e3,name:"未报销金额"},{value:2e3,name:"报销中金额"},{value:1860,name:"已报销金额"}]}]};

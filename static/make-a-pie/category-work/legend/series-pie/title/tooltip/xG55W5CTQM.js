@@ -1,0 +1,4 @@
+var data=[{value:.1,name:"舌象"},{value:20,name:"血压"},{value:20,name:"心电"},{value:10,name:"血氧"},{value:20,name:"血糖"},{value:20,name:"体温"},{value:20,name:"体脂"}],option={legend:{show:!1,orient:"vertical",top:"0",right:"0",textStyle:{color:"#666666",fontWeight:"normal"}},title:{text:`共有数据
+{number|800000}
+条`,left:"center",top:"center",textStyle:{color:"#666666",fontSize:16,fontWeight:"400",rich:{number:{color:"#222222",fontSize:48,fontWeight:"bold",padding:[10,0,0,0]}}},itemGap:-4},tooltip:{trigger:"item",formatter:e=>`${e.name} ${e.value}条`},series:[{type:"pie",radius:["70%","90%"],label:{show:!0,position:"outside",formatter:`{a|{b}}
+{hr|}`,rich:{hr:{backgroundColor:"t",borderRadius:3,width:3,height:3,padding:[3,3,0,-12]},a:{padding:[-30,5,-20,15]}}},avoidLabelOverlap:!0,labelLine:{normal:{show:!0,length:5}},data,color:["#15BEB8","#4786FF","#FDB54D","#FD8F4D","#F76661","#B06DF4","#73C8FF"],silent:!1}]};

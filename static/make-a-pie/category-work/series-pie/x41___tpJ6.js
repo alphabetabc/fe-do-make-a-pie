@@ -1,0 +1,1 @@
+var data=308,max=500;option={backgroundColor:"#23bd5d",color:["rgba(90, 216, 255, 1)","rgba(90, 216, 255, 0.5)","rgba(90, 216, 255, 0.2)"],series:[{type:"pie",radius:["95%","100%"],hoverAnimation:!1,labelLine:{show:!1},data:[{value:data},{value:0,label:{position:"inside",backgroundColor:"rgba(90, 216, 255, 1)",borderRadius:100,padding:50}},{value:max-data}]}]};

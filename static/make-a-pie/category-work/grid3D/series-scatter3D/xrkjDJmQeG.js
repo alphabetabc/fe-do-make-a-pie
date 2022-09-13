@@ -1,0 +1,2 @@
+var uploadedDataURL="/asset/get/s/data-1511365693708-BkLB2GXxG.csv",data=[];$.get(uploadedDataURL).then(function(t){t.split(`
+`).slice(1).forEach(function(a){data.push(a.split(",").map(function(e){return+e}))}),myChart.setOption({xAxis3D:{type:"value"},yAxis3D:{type:"value"},zAxis3D:{type:"value"},grid3D:{viewControl:{},light:{main:{shadow:!0,quality:"ultra",intensity:1.5}}},series:[{type:"scatter3D",data}]})});

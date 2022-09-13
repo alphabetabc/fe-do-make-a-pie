@@ -1,0 +1,1 @@
+option={series:[{type:"pie",clockWise:!0,hoverAnimation:!1,radius:[15,25],center:["50%","50%"],data:[{value:3,itemStyle:{normal:{label:{show:!1,position:"center"},labelLine:{show:!1},color:"#3abd61"}}},{name:"ohter",value:7,itemStyle:{normal:{label:{show:!1,position:"center"},labelLine:{show:!1,position:"center"},color:"#E6C335"}}}]}]};

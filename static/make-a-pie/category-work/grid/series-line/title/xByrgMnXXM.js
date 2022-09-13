@@ -1,0 +1,2 @@
+option={name:"体重简化",backgroundColor:"#FFFFFF",title:{text:`体重
+79Kg`,textStyle:{fontWeight:"normal",fontSize:24,color:"#0099ff"},left:"2%",top:"5%"},grid:{left:"0%",right:"3%",bottom:"0%",containLabel:!0},xAxis:[{type:"category",boundaryGap:!1,data:["9.23","10.3","10.11","10.15","10.26","11.2"],axisLabel:{show:!1},axisLine:{show:!1},axisTick:{show:!1}}],yAxis:[{show:!1,min:75,max:85}],series:[{name:"体重简化",type:"line",smooth:!0,showSymbol:!1,lineStyle:{normal:{width:5,color:"#0099ff"}},data:[83,82,80,83,80,79]}]};

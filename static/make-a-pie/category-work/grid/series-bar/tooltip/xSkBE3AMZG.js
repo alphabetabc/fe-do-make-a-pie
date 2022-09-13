@@ -1,0 +1,1 @@
+app.title="网友的态度",option={color:["#3398DB"],tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},grid:{left:"30%",right:"30%",bottom:"10%",containLabel:!0},xAxis:[{type:"category",data:["支持政府","支持俱乐部","评说"],axisTick:{alignWithLabel:!0}}],yAxis:[{type:"value"}],series:[{name:"直接访问",type:"bar",barWidth:"60%",data:[14,45,241]}]};

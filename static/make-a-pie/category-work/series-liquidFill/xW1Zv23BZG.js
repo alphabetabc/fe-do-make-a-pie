@@ -1,0 +1,1 @@
+option={backgroundColor:"#485C6D",series:[{type:"liquidFill",radius:"80%",center:["50%","50%"],amplitude:20,data:[.5,.5,.5],color:["#23cc72"],backgroundStyle:{borderWidth:1,borderColor:"#23cc72",color:"#485C6D"},label:{normal:{position:["50%","30%"],formatter:"50%",textStyle:{fontSize:"52px",color:"#23cc72"}}},outline:{show:!1}}]};

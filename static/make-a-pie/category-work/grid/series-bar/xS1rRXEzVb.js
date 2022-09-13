@@ -1,0 +1,1 @@
+option={xAxis:{splitLine:{show:!1}},yAxis:{data:["a","b","c","d"],axisTick:{show:!1}},series:[{type:"bar",itemStyle:{normal:{color:"#ddd"}},silent:!0,barWidth:40,barGap:"-100%",data:[30,70,80,100]},{type:"bar",barWidth:40,z:10,data:[10,30,70,80]}]};

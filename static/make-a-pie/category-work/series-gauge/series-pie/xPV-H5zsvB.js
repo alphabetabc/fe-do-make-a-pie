@@ -1,0 +1,5 @@
+const obj={startAngle:220,endAngle:-40,pointer:{show:!1},axisLabel:{show:!1},axisTick:{show:!1}};option={series:[{type:"gauge",splitNumber:95,splitLine:{distance:-50,length:20,lineStyle:{width:10,color:"#3ff0a3"}},axisLine:{lineStyle:{width:4,color:[[1,"#3300ee11"]]}},itemStyle:{show:!1,color:"#FFAB91"},axisLabel:{show:!1},...obj},{type:"pie",radius:["62%","70%"],startAngle:220,endAngle:-40,color:["cyan","blue","transparent"],label:{show:!1},data:[{value:120,name:"搜索引擎"},{value:140,name:"直接访问"},{value:100,name:"邮件营销"}]},{type:"gauge",radius:"58%",startAngle:220,endAngle:-40,splitNumber:25,splitLine:{length:5,lineStyle:{width:5,color:"#4dcbe78f",type:"dotted"}},pointer:{show:!1},axisLabel:{show:!1},axisTick:{show:!1},axisLine:{lineStyle:{width:4,color:[[1,"#3300ee11"]]}},detail:{valueAnimation:!0,borderRadius:8,formatter:function(e){return`{a|在线率} 
+
+ {b|${e}} 
+
+ %`},rich:{a:{color:"#49C3DF",fontSize:50,lineHeight:20,padding:[0,0,200,0]},b:{color:"#49C3DF",height:40,fontSize:130,padding:[0,0,30,0],fontWeight:"bolder"}}},data:[{value:86}]}]};

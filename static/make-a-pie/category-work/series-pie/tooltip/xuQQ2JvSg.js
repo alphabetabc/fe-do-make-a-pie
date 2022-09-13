@@ -1,0 +1,1 @@
+option={tooltip:{},series:{type:"pie",hoverAnimation:!1,radius:["70%","90%"],data:[{value:80,label:{position:"center",color:"#60acfc",formatter:"{c}%",fontSize:60},itemStyle:{color:"#60acfc"}},{value:20,tooltip:{show:!1},label:{show:!1},labelLine:{show:!1},itemStyle:{color:"#E6E6E6"},emphasis:{itemStyle:{color:"#E6E6E6"}}}]}};

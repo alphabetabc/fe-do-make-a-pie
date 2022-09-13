@@ -1,0 +1,1 @@
+var symbolRotateNum=[90,45,50,12,10,0,150],valueNum=[820,932,901,934,1290,1330,1320],data=echarts.util.map(valueNum,function(t,a){return{value:valueNum[a],symbolRotate:symbolRotateNum[a]}});option={xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data,type:"line",symbol:"triangle",symbolSize:"20"}]};

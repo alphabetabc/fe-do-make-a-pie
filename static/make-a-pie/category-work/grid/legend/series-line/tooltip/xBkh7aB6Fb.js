@@ -1,0 +1,1 @@
+var data={ts:["2017-10-01","2017-10-02","2017-10-03"],series:{A:[1,2,3],B:[1,6,7],C:[2,2,5]}},legends=Object.keys(data.series),series=legends.map(e=>({name:e,data:data.series[e].map((s,t)=>[data.ts[t],s]),type:"line"}));option={legend:{data:legends},xAxis:{type:"time"},yAxis:{show:!0},tooltip:{show:!0},series};

@@ -1,0 +1,9 @@
+var colors=["orange","#5793f3","black"];option={color:colors,tooltip:{trigger:"axis"},toolbox:{feature:{dataView:{show:!0,readOnly:!1},restore:{show:!0},saveAsImage:{show:!0}}},legend:{data:["麦汁浓度","浊度","压差"]},grid:{top:80,left:150,bottom:200},xAxis:[{axisTick:{alignWithLabel:!0},name:"年份",nameLocation:"center",nameGap:30,nameTextStyle:{fontSize:14,lineHeight:30,verticalAlign:" bottom"},axisLine:{onZero:!1,lineStyle:{color:colors[0]}},boundaryGap:!1,splitLine:{show:!0},type:"category",data:["1986","1987"," 1988","1989","1990","1991"," 1992","1993"," 1994"," 1995","1996","1997","1998","1999","2000"," 2001","2002 ","2003","2004"," 2005","2006"," 2007","2008","2009","2010","2011","2012","2013","2014","2015"]},{boundaryGap:!1,position:"bottom",offset:60,name:"年份",nameLocation:"center",nameGap:30,nameTextStyle:{fontSize:14,lineHeight:30,verticalAlign:" bottom"},splitLine:{show:!0},axisLine:{onZero:!1,lineStyle:{color:colors[1]}},type:"category",data:["26","226","426","626","826","1026"]},{boundaryGap:!1,position:"bottom",offset:120,splitLine:{show:!0},axisLine:{onZero:!1,lineStyle:{color:colors[2]}},type:"category",data:["52.65263","551.65263","1051.65263","1551.65263"]}],yAxis:[{type:"value",name:`麦
+汁
+浓
+度
+%`,min:0,max:600,position:"left",axisLine:{lineStyle:{color:colors[0]}}},{type:"value",name:`浊
+度
+mg/L`,min:0,max:25,position:"left",offset:60,axisLine:{lineStyle:{color:colors[1]}}},{type:"value",name:`压
+差
+mmWS`,min:0,max:12,position:"left",offset:120,axisLine:{lineStyle:{color:colors[2]}}}],series:[{name:"麦汁浓度",type:"line",markArea:{silent:!0},data:[286.2185728,324,369,407,23,10,20,1,15,17,286.2185728,324,23,10,20,1,286.2185728,324,23,15,17,369,407,286.2185728,324,369,407,20,40]},{name:"浊度",type:"line",xAxisIndex:1,yAxisIndex:1,markArea:{silent:!0},data:[23,10,20,1,15,17]},{name:"压差",type:"line",xAxisIndex:2,yAxisIndex:2,markArea:{silent:!0},data:[1,12,3,7]}]};

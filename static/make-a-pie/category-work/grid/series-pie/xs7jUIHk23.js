@@ -1,0 +1,5 @@
+let data=[{name:"其他支出",value:465},{name:"用餐支出",value:800},{name:"用水支出",value:585},{name:"用电支出",value:648}],colorList=["#00FCFD","#1F6EFF","#3E82FF","#8BF39A"],xData=[],yData=[],outLineData=[];data.map((e,a)=>{xData.push(e.name),yData.push({itemStyle:{normal:{color:colorList[a]}},value:e.value,name:e.name})}),option={backgroundColor:"#00070B",xAxis:{data:xData,axisLine:{show:!1},axisTick:{show:!1},axisLabel:{show:!1}},yAxis:{axisLine:{show:!1}},series:[{type:"pie",radius:["30%","60%"],center:["50%","50%"],itemStyle:{color:"#00070B",borderColor:"#00070B",borderWidth:5},labelLine:{normal:{length:40,length2:0,lineStyle:{color:"transparent"}}},label:{normal:{formatter:e=>(console.log(e),`{cir|●}
+{name|}{value|${e.name}}
+{price|${e.value}元}
+{percent|${e.percent}%}
+{hr|————————————————}`),rich:{value:{color:"#C3F0FF",padding:[-24,5,0,5]},price:{color:"#00BAFF",padding:[-12,110,0,110]},percent:{color:"#00BAFF",padding:[7,165,0,165]},hr:{padding:[-0,0,0,0],height:1},cir:{fontSize:20,opacity:1,padding:[-63,-10,0,-10]},bdbt:{borderColor:"t",borderWidth:.5}}}},data:yData,z:-1}]};

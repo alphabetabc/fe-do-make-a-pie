@@ -1,0 +1,5 @@
+const fontColor="#000",seriesData=[30,50,60,80];option={title:{text:"(年份)",textStyle:{color:fontColor,fontSize:14}},tooltip:{trigger:"axis",axisPointer:{type:"shadow"},formatter:e=>{const{axisValueLabel:t,value:a}=e[0];return`<span style="display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(0, 255, 253, 1)"></span> <span>${t}</span> <span>${a}</span>`}},legend:{show:!1},grid:{left:"3%",right:"4%",bottom:"3%",top:"3%",containLabel:!0},xAxis:{type:"value",show:!1},yAxis:{axisLine:{show:!1},splitLine:{show:!1},axisTick:{show:!1},axisLabel:{color:fontColor},data:[2016,2017,2018,2019]},series:[{name:"2011",type:"bar",zlevel:10,barWidth:8,itemStyle:{borderRadius:10,color:new echarts.graphic.LinearGradient(0,0,1,0,[{offset:0,color:"rgba(1, 85, 255, 0)"},{offset:.5,color:"#005ea0"},{offset:1,color:"rgba(0, 193, 255, 1)"}])},data:seriesData},{name:"2012",type:"bar",barGap:"-100%",barWidth:8,itemStyle:{color:"#000911",borderRadius:10},label:{show:!0,position:"right",formatter:e=>{console.log(e);const{dataIndex:t}=e;return seriesData[t]}},data:[100,100,100,100]}]};

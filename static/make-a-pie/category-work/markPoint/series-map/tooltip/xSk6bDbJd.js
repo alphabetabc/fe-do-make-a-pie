@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"item",formatter:"{b}"},series:[{name:"中国",type:"map",mapType:"china",selectedMode:"multiple",label:{normal:{show:!0},emphasis:{show:!0}},data:[],markPoint:{symbol:"pin",symbolSize:100,label:{normal:{show:!0,formatter:function(e){return e.name}}},data:[{name:"武汉",coord:[114.31,30.52]}]}}]};

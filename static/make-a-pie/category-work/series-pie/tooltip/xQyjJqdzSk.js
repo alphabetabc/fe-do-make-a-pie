@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"item"},series:[{name:"访问来源",type:"pie",radius:["40%","56%"],avoidLabelOverlap:!1,label:{show:!1,position:"center"},itemStyle:{normal:{color:function(e){return["#94ea87","#ffa048"][e.dataIndex]}}},emphasis:{label:{show:!0,fontSize:"40",fontWeight:"bold"}},labelLine:{show:!1},data:[{value:1048,name:"搜索引擎"},{value:735,name:"直接访问"}]}]};

@@ -1,0 +1,2 @@
+option={name:"血氧简化",backgroundColor:"#FFFFFF",title:{text:`血氧
+96%`,textStyle:{fontWeight:"normal",fontSize:24,color:"#50cfa0"},left:"2%",top:"5%"},grid:{left:"0%",right:"3%",bottom:"0%",containLabel:!0},xAxis:[{type:"category",boundaryGap:!1,data:["9.23","10.3","10.11","10.15","10.26","11.2"],axisLabel:{show:!1},axisLine:{show:!1},axisTick:{show:!1}}],yAxis:[{show:!1,min:92,max:100}],series:[{name:"血氧",type:"line",smooth:!0,showSymbol:!1,lineStyle:{normal:{width:5,color:"#50cfa0"}},data:[96,97,97,97,96,95]}]};

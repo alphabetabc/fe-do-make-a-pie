@@ -1,0 +1,1 @@
+option={backgroundColor:"#1f1e26",series:[{name:"大环",type:"gauge",splitNumber:100,radius:"60%",center:["50%","50%"],startAngle:90,endAngle:-269.9999,axisLine:{show:!1,lineStyle:{color:[[.3,"#6dfbff"],[1,"#293041"]]}},axisTick:{show:!1},splitLine:{show:!0,length:22,lineStyle:{color:"auto",width:2.5}},axisLabel:{show:!1},detail:{show:!1}}]};

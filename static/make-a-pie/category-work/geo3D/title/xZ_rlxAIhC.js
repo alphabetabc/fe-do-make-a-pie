@@ -1,0 +1,1 @@
+option={title:{text:"3D中国地图",x:"center",top:"20",textStyle:{color:"#000",fontSize:24}},geo3D:{map:"china",roam:!0,itemStyle:{areaColor:"orange",opacity:1,borderWidth:.8,borderColor:"rgb(62,215,213)"}}};

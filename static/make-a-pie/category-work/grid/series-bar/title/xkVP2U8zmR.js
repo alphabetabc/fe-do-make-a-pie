@@ -1,0 +1,1 @@
+option={tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},legend:{},grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:{type:"value"},yAxis:{type:"category",data:[""]},series:[{name:"Direct",type:"bar",stack:"total",label:{show:!0},emphasis:{focus:"series"},data:[320,302,301,334,390,330,320]}]};

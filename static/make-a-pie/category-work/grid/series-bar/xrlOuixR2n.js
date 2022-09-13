@@ -1,0 +1,1 @@
+var custom=[{ids:[1,2],asdasd:1,value:5,itemStyle:{color:"black"}},{ids:12,value:12}],option={xAxis:{data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]},yAxis:{},series:[{name:"销量",type:"bar",data:custom}]};myChart.setOption(option),myChart.on("click",function(a){alert(a.data.asdasd)});

@@ -1,0 +1,2 @@
+option={name:"BMI简化",backgroundColor:"#ffffff",title:{text:`BMI
+25`,textStyle:{fontWeight:"normal",fontSize:24,color:"#6b94ff"},left:"2%",top:"5%"},grid:{left:"0%",right:"3%",bottom:"0%",containLabel:!0},xAxis:[{type:"category",boundaryGap:!1,data:["9.23","10.3","10.11","10.15","10.26","11.2"],axisLabel:{show:!1},axisLine:{show:!1},axisTick:{show:!1}}],yAxis:[{show:!1,min:27.7,max:29}],series:[{name:"BMI",type:"line",smooth:!0,symbol:"circle",showSymbol:!1,lineStyle:{normal:{width:5,color:"#6b94ff"}},data:[28,28.3,28,28.3,28,27.9]}]};

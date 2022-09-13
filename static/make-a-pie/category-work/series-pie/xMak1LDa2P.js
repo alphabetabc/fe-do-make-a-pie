@@ -1,0 +1,2 @@
+option={backgroundColor:"#003366",series:[{name:"访问来源",type:"pie",radius:["60%","70%"],startAngle:0,avoidLabelOverlap:!1,label:{normal:{show:!1,position:"center",formatter:e=>`{top|总销售}
+{bottom|99999}`,rich:{top:{fontSize:12,color:"#fff"},bottom:{fontSize:14,color:"#fff",fontWeight:"bold",padding:[0,0,12,0]}}}},emphasis:{label:{show:!0}},labelLine:{normal:{show:!1}},data:[{value:80,name:"直接售彩",highlight:!0,label:{show:!0},itemStyle:{color:"#feb000"}},{value:20,name:"间接售彩",itemStyle:{color:"#00ffff"}}]}]};

@@ -1,0 +1,1 @@
+option={xAxis:{type:"category",data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data:[120,200,150,80,70,110,130],type:"bar"}]},setInterval(function(){var a=new Date().toLocaleTimeString().replace(/^\D*/,""),t=option.series[0].data;t.push(Math.round(Math.random()*1e3)),option.xAxis.data.push(a),myChart.setOption(option)},2100);

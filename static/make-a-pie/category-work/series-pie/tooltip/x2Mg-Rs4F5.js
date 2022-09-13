@@ -1,0 +1,1 @@
+option={tooltip:{},color:["#0696ff","#ccc","transparent"],series:[{type:"pie",radius:["45%","70%"],avoidLabelOverlap:!1,startAngle:210,center:["50%","50%"],label:{show:!1},data:[{value:120,tooltip:{formatter:function(t){return t.marker+"value: "+t.value}}},{value:120,tooltip:{formatter:function(t){return""}}},{value:120,name:"",tooltip:{formatter:function(t){return""}}}]}]};

@@ -1,0 +1,7 @@
+option={color:["#00C1DE","#6F7AF8","#F5A547"],tooltip:{trigger:"axis",axisPointer:{type:"line",lineStyle:{color:"rgba(0,0,0,0.25)"}},backgroundColor:"rgba(255,255,255,0.90)",padding:12,textStyle:{color:"rgba(0,0,0,0.65);"},extraCssText:"box-shadow: 0 2px 4px 0 rgba(169,169,169,0.50); border-radius: 4px",formatter:function(a){const e=a[0],t=a[1],r=a[2];return`
+					<div class='slot-chart-tooltip'>
+					${r.marker} <span class='slot-chart-name'>${r.seriesName}</span>${r.value}<br>
+					${t.marker} <span class='slot-chart-name'>${t.seriesName}</span>${t.value}%<br>
+					${e.marker} <span class='slot-chart-name'>${e.axisValue} ${e.seriesName}</span>${e.value}%<br>
+					</div>
+				`}},grid:{left:20,right:20,bottom:20,containLabel:!0},legend:{data:[{name:"cpu使用率",icon:"circle"},{name:"内存使用率",icon:"circle"},{name:"实例数",icon:"circle"}]},xAxis:[{type:"category",boundaryGap:!1,data:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]}],yAxis:[{type:"value",name:"使用率（%）",position:"left",min:0,max:100,axisLabel:{formatter:"{value}"}},{type:"value",name:"实例数",position:"right",scale:!0,axisLabel:{formatter:"{value}"}}],series:[{name:"cpu使用率",type:"line",yAxisIndex:0,data:[2,4.9,7,23.2,25.6,76.7,15.6,12.2,32.6,20,6.4,3.3]},{name:"内存使用率",type:"line",yAxisIndex:0,data:[2.6,5.9,9,26.4,28.7,70.7,15.6,12.2,48.7,18.8,6,2.3]},{name:"实例数",type:"line",yAxisIndex:1,data:[222,2.2,3.3,4.5,6.3,10.2,20.3,23.4,23,16.5,12,6.2]}]};

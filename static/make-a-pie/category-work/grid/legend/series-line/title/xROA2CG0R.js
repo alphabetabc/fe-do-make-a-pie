@@ -1,0 +1,2 @@
+option={title:{show:!0,text:"{a|我是标题文本}",left:"center",textVerticalAlign:"middle",padding:30,textStyle:{formatter:["{a|这段文本采用样式a}"].join(`
+`),rich:{a:{color:"red",lineHeight:30,height:30,width:800,backgroundColor:"skyblue"}}}},legend:{show:!0,data:["邮件营销","联盟广告","视频广告","直接访问","搜索引擎"]},grid:{top:80,left:50,right:50,bottom:50},xAxis:{type:"category",boundaryGap:!1,data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},yAxis:{type:"value"},series:[{data:[820,932,901,934,1290,1330,1320],type:"line",areaStyle:{}}]};

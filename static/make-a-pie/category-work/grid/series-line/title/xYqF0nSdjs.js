@@ -1,0 +1,1 @@
+var option={series:[{type:"liquidFill",data:[.6,.55,.4,.25],radius:"80%",outline:{show:!1},shape:"run",backgroundStyle:{color:"#ffffff1f"},label:{normal:{position:["38%","40%"],formatter:function(){return"水量"},textStyle:{fontSize:20,color:"#000000"}}}}]};

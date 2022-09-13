@@ -1,0 +1,1 @@
+option={backgroundColor:"#020202",tooltip:{trigger:"axis"},xAxis:{data:["墨脱县","米林县","察隅县","巴宜区","波密县","工布达江县","朗县"],axisLabel:{textStyle:{color:"#999999"}}},yAxis:{axisLabel:{textStyle:{color:"#999999"}}},series:[{type:"bar",barWidth:"20%",data:[7e3,1200,5e3,3e3,2e3,6e3,5600],color:["#91c7ae"]},{type:"line",data:[7e3,1200,5e3,3e3,2e3,6e3,5600],symbolSize:5,color:["#d48265"]}]};

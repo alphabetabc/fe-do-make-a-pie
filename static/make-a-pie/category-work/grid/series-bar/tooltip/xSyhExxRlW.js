@@ -1,0 +1,1 @@
+app.title="坐标轴刻度与标签对齐",option={color:["#3398DB"],tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},grid:{left:"3%",right:"4%",bottom:"3%",containLabel:!0},xAxis:[{type:"category",data:["20-25年","26-30年","31-35年","36-40","41-45年","45年以上"],axisTick:{alignWithLabel:!0}}],yAxis:[{type:"value"}],series:[{name:"直接访问",type:"bar",barWidth:"60%",data:[1,13,25,18,39,21]}]};

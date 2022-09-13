@@ -1,0 +1,13 @@
+let dashedPic="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM8AAAAOBAMAAAB6G1V9AAAAD1BMVEX////Kysrk5OTj4+TJycoJ0iFPAAAAG0lEQVQ4y2MYBaNgGAMTQQVFOiABhlEwCugOAMqzCykGOeENAAAAAElFTkSuQmCC",color=["#d73027","#f46d43","#fdae61","#fee090","#ffffbf","#e0f3f8","#abd9e9","#74add1","#4575b4"],chartData=[{name:"农       界",value:1865},{name:"苦       力",value:1066},{name:"商       界",value:676},{name:"未       详",value:664},{name:"工       界",value:608},{name:"无       业",value:353},{name:"防疫人员",value:73},{name:"绅       学",value:62},{name:"军       人",value:33}],arrName=[],arrValue=[],sum=0,pieSeries=[],lineYAxis=[];chartData.forEach((t,e)=>{arrName.push(t.name),arrValue.push(t.value),sum=sum+t.value}),chartData.forEach((t,e)=>{pieSeries.push({name:"",type:"pie",clockWise:!1,hoverAnimation:!0,radius:[80-e*7+"%",75-e*7+"%"],center:["23%","45%"],label:{show:!1},data:[{value:t.value,name:t.name},{value:sum-t.value,name:"",itemStyle:{color:"rgba(0,0,0,0)"},tooltip:{show:!1}}]}),pieSeries.push({name:"",type:"pie",silent:!0,z:1,clockWise:!1,hoverAnimation:!1,radius:[79-e*7+"%",76-e*7+"%"],center:["23%","45%"],label:{show:!1},data:[{value:2.5,itemStyle:{color:"rgba(0,0,0,0.1)"},tooltip:{show:!1}},{value:2.5,name:"",itemStyle:{color:"rgba(0,0,0,0)"},tooltip:{show:!1}}]}),t.percent=(t.value/sum*100).toFixed(1)+"%",lineYAxis.push({value:e,textStyle:{rich:{circle:{color:color[e],padding:[0,5]}}}})}),option={backgroundColor:"#363636",title:[{text:"奉天各属疫毙人数职业比较",subtext:"数据来源：《东三省疫事报告书》奉天防疫总局，1911年",textAlign:"center",left:"32%",bottom:"3%",textStyle:{color:"#fff",fontSize:25},subtextStyle:{fontSize:15}},{text:"备注",subtext:`一、奉天全省统辖 51 属，右表仅列有疫之 28 属，余则从略。
+
+二、右表绅学一栏，统士绅学生各项上流社会而言之。
+
+三、右表既就职业上区分疫死之多寡，故妇女疫毙者未为列入。
+
+       统计男子死者 5400 人，妇女死者 1558 人，共 6958 人。
+
+       就此表观之，农及苦力占最多数，其次工商无业者占 1/20 ，
+
+       防疫人员居 1/100 ，绅学军人占最少数。
+
+       若以男女比较，则女占 1/4 而弱，男占 3/4 而强。`,left:"27%",bottom:"18%",backgroundColor:"rgba(0,0,0,0.1)",borderRadius:10,padding:18,textStyle:{color:"#fff",fontSize:20},subtextStyle:{fontSize:15}}],tooltip:{show:!0,trigger:"item",formatter:"{b}<br>{c}人 ({d}%)",fontSize:18},color,grid:{top:"4.5%",bottom:"64%",left:"27%",containLabel:!0},yAxis:[{type:"category",inverse:!0,axisLine:{show:!1},axisTick:{show:!1},axisLabel:{formatter:function(t){let e=chartData[t];return console.log(e),"{line|}{circle|●}{name| "+e.name+" }{bd||}{percent| "+e.percent+" }{value|"+e.value+"}"},interval:0,inside:!0,textStyle:{color:"#333",fontSize:14,rich:{line:{width:200,height:3,backgroundColor:{image:dashedPic}},name:{color:"white",fontSize:16},bd:{color:"white",padding:[0,5],fontSize:15},percent:{color:"white",fontSize:16},value:{color:"white",fontSize:16,fontWeight:500,padding:[0,0,0,20]}}},show:!0},data:lineYAxis}],xAxis:[{show:!1}],series:pieSeries};

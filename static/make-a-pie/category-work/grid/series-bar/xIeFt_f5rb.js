@@ -1,0 +1,1 @@
+var ItemStyle={normal:{color:function(t){var a;return t.data>=0?a="#61A5E8":a="#E16757",a}}};option={xAxis:[{type:"category",data:["C","A","B4","B5"]}],yAxis:[{type:"value"}],series:[{type:"bar",itemStyle:ItemStyle,barWidth:20,barGap:1,barCategoryGap:20,data:[5,-3,5,-5]}]};

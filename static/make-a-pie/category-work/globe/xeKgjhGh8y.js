@@ -1,0 +1,1 @@
+option={backgroundColor:"#000",globe:{displacementScale:.04,shading:"realistic",realisticMaterial:{roughness:.9},postEffect:{enable:!0},light:{main:{intensity:5,shadow:!0},ambientCubemap:{diffuseIntensity:.2}}}};

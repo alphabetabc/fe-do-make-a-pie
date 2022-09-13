@@ -1,0 +1,3 @@
+option={backgroundColor:"#071729",series:{type:"pie",clockWise:!1,radius:[90,100],hoverAnimation:!1,silent:!1,center:["50%","50%"],label:{normal:{show:!1},emphasis:{show:!0}},data:[{value:75,name:"invisible",itemStyle:{normal:{show:!1,color:"#DCE1E7"}}},{value:25,label:{normal:{rich:{a:{color:"#2C3F58",align:"center",fontSize:25,fontWeight:"bold",fontFamily:"方正粗倩_GBK"},b:{color:"#8998AC",align:"center",fontSize:12},c:{color:"#2C3F58",fontSize:15,fontFamily:"方正粗倩_GBK",fontWeight:"bold"}},formatter:function(e){return"{a|"+e.value+`} {c|分}
+
+{b|满意度平均分}`},position:"center",show:!0,textStyle:{fontSize:"14",fontWeight:"normal",color:"#fff"}}},itemStyle:{normal:{color:"#FEC756"}}}]}};

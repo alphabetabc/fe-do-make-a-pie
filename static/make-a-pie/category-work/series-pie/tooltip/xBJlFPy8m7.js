@@ -1,0 +1,3 @@
+app.title="嵌套环形图";let data=[{value:10,name:"其他"},{value:1,name:"直达"},{value:2,name:"邮件营销"},{value:3,name:"联盟广告"},{value:4,name:"视频广告"},{value:5,name:"百度"}];option={backgroundColor:"#fff",tooltip:{formatter:"{a}：<br/>{b}: {c}人"},series:[{name:"",type:"pie",hoverAnimation:!0,silent:!0,radius:[0,"30%"],color:["#f15a24"],label:{show:!0,formatter:`{pre|{c}} 
+ 
+ 全国命中总数`,color:"#333",position:"center",fontSize:18,rich:{pre:{fontSize:30,color:"#333"}}},data:[{value:25,itemStyle:{color:"#fff"}}]},{name:"访问来源",type:"pie",radius:["30%","40%"],color:["#f8db76","#f15a24","#f47b28","#f89d2c","#fcaa2f","#fccc21"],itemStyle:{},label:{normal:{show:!1},emphasis:{show:!1}},data}]};
