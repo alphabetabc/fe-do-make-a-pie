@@ -7,9 +7,9 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "cross-env NODE_ENV_PREVIEW=true vite preview",
-        "gh-pages-params": "",
         "build:gh-pages": "cross-env APP_BASE_URL='fe-do-make-a-pie' yarn build",
-        "preview:gh-pages": "cross-env APP_BASE_URL='fe-do-make-a-pie' yarn preview"
+        "preview:gh-pages": "cross-env APP_BASE_URL='fe-do-make-a-pie' yarn preview",
+        "publish:gh-pages": "sh ./scripts/publish.sh"
     },
     "keywords": [],
     "author": "",
